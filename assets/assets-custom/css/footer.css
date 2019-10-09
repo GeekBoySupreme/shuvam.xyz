@@ -32,6 +32,7 @@
 
 #footer .share-social {
     display: inline-block;
+    margin-left:-5px;
 }
 
 #footer .share-social span {
@@ -39,8 +40,8 @@
 }
 
 #footer p a:link {
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
 }
 
 #footer span b:first-child {
@@ -57,6 +58,11 @@
     text-align: right;
 }
 
+#social_button
+{
+    padding-top:5px;
+    font-weight:600;
+}
 
 
 #footer #top-button {

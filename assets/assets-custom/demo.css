@@ -56,7 +56,7 @@ body {
 }
 
 .main {
-    width: 102%;
+    width: 100%;
     margin-left: 0px;
     margin-top: -80px;
     right: 0;
@@ -323,3 +323,8 @@ Other Pages
     line-height:1.6;
 }
 
+
+#section_holder
+{
+    width:50%;
+}
