@@ -314,9 +314,14 @@ Other color edits
 Other Pages
 ========================================================================== */
 .header-icon-text {
+    top: 6px;
     position: relative;
-    top: -10px;
 }
+
+ul {
+    padding-left: unset;
+}
+
 
 .textblock
 {

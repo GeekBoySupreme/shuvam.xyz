@@ -17387,8 +17387,8 @@ footer .pull-center {
         display: flex;
         -ms-flex-pack: justify !important;
         justify-content: space-between !important;
-        -ms-flex-align: center;
-        align-items: center;
+        -ms-flex-align: left;
+        align-items: left;
         -webkit-transition: transform 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
         -moz-transition: transform 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
         -o-transition: transform 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
