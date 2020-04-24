@@ -33,7 +33,7 @@ body {
     max-width: 102%;
     overflow-x: hidden;
     background: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Mono', monospace;
 }
 
 .nomob {
@@ -65,7 +65,7 @@ body {
 .tag_title,
 .tag_details {
     color: rgb(90, 90, 90);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Mono', monospace;
     margin-top:5px;
 
 }
@@ -179,14 +179,15 @@ body {
 
 .title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Mono', monospace;
     margin-top:5px;
     font-weight:150;
 }
 .description
 {
     color: rgb(64, 64, 64);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open sans', sans-serif;
+
 }
 
 .icon
@@ -321,6 +322,7 @@ Other Pages
     text-align:left;
     font-size:20px;
     line-height:1.6;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
