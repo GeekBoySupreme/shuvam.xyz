@@ -874,7 +874,7 @@ mark,
 
 .initialism {
     font-size: 90%;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .blockquote {
@@ -8646,7 +8646,7 @@ button.bg-dark:focus {
 }
 
 .text-uppercase {
-    text-transform: uppercase !important;
+    text-transform: none !important;
 }
 
 .text-capitalize {
@@ -8857,7 +8857,7 @@ button:focus {
     font-weight: 400;
     line-height: 1.428571;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0;
     cursor: pointer;
     background-color: transparent;
@@ -14136,7 +14136,7 @@ textarea {
 }
 
 .nav-link {
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .navbar-nav .nav-link {
@@ -14207,7 +14207,7 @@ textarea {
     padding: 0.9375rem;
     font-weight: 400;
     font-size: 12px;
-    text-transform: uppercase;
+    text-transform: none;
     border-radius: 3px;
     line-height: 20px;
 }
@@ -14443,7 +14443,7 @@ textarea {
 .badge {
     border-radius: 12px;
     padding: 5px 12px;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 10px;
     color: #fff;
 }
@@ -14485,7 +14485,7 @@ textarea {
 
 .alert b {
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 12px;
 }
 
@@ -14624,7 +14624,7 @@ textarea {
     color: #999999;
     font-weight: 400;
     font-size: 12px;
-    text-transform: uppercase;
+    text-transform: none;
     background: transparent;
     text-align: center;
 }
@@ -14707,7 +14707,7 @@ textarea {
 
 .nav-pills .nav-item .nav-link {
     line-height: 24px;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 12px;
     font-weight: 500;
     min-width: 100px;
@@ -14918,7 +14918,7 @@ h5,
 h6,
 .h6 {
     font-size: 0.75rem;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 500;
 }
 
@@ -15054,7 +15054,7 @@ h2.title {
     margin: 0;
     border-radius: 3px;
     line-height: 24px;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 12px;
     padding: 10px 15px;
     background-color: transparent;
@@ -16397,7 +16397,7 @@ footer ul li a {
     padding: 0.9375rem;
     font-weight: 500;
     font-size: 12px;
-    text-transform: uppercase;
+    text-transform: none;
     border-radius: 3px;
     text-decoration: none;
     position: relative;
@@ -16717,7 +16717,7 @@ footer .pull-center {
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     font-size: 12px;
-    text-transform: uppercase;
+    text-transform: none;
     color: rgba(0, 0, 0, 0.87);
     font-weight: 400;
     padding-bottom: 5px;
