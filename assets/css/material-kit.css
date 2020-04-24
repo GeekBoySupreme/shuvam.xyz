@@ -11,6 +11,23 @@
  *
  * ========================================================= */
 
+ a i {
+     font-size: 22px;
+     margin: 5px;
+ }
+
+ .text-holder-retro {
+    padding: 15px; 
+    background: white;
+    border: 3px solid rgb(56, 33, 3);
+    font-family: 'PT Mono', monospace!important;
+    font-weight: 900;
+ }
+
+ .description {
+     font-family: 'Open sans', sans-serif;
+ }
+
 .card {
     font-size: .875rem;
 }
