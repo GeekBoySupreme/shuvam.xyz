@@ -13,19 +13,14 @@
         Shuvam Manna
     </title>
     <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/material-kit.css?v=2.0.2">
     <!-- Documentation extras -->
     <link href="assets/assets-custom/demo.css" rel="stylesheet" />
     <link href="assets/assets-custom/css/footer.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/622afd0c30.js" crossorigin="anonymous"></script>
     
    <style>
 
@@ -157,8 +152,8 @@
                     <!--Second column-->
                     <div class="col-lg-6 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
                        <!--Card-->
-                       
-                       <img class="img-fluid" src="new-assets/starry-night.gif" width="100%"/>
+                       <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_nDKE8Z.json"  background="transparent"  speed="1"  style="width: 100%; height: 300px;"  loop  autoplay></lottie-player>
+                      
                        <p>&nbsp;</p>
                    </div>
                    <!--/.Second column-->
@@ -452,10 +447,14 @@
     <div id="footer">
         <div class="container" style="padding-top: 20px;">
             <p>&nbsp;</p>
+            <a href="#top" id="top-button" class="top">
+                <i class="material-icons" style=" font-size: 30px; padding:5px; background:white;">
+                        keyboard_arrow_up
+                        </i>
+            </a>
             <div class="row" id="contact">
                 <p>&nbsp;</p>
-                <div class="col-lg-8"><h2 class="title" id="tracks">Looking to start a Project? <a href="mailto:shuvam.manna@gmail.com" style="color:rgb(12, 90, 207);">Let's Talk.</a></h2>
-                    
+                <div class="col-lg-12"><h2 class="title" id="tracks">Looking to start a Project? <a href="mailto:shuvam.manna@gmail.com" style="color:rgb(12, 90, 207);">Let's Talk.</a></h2>
                 </div>
             </div>
             <div class="row">
@@ -467,12 +466,6 @@
                             <a id="social_button" href="https://instagram.com/the_distorted_aura" target="_blank" style="color:rgb(49, 118, 223);">Instagram</a><a>&nbsp;</a>
                             <a id="social_button" href="https://medium.com/@shuvam.manna" target="_blank">Medium</a><a>&nbsp;</a>
                             <a>&nbsp;</a>
-
-                            <a href="#top" id="top-button" class="top">
-                                <i class="material-icons" style=" font-size: 30px; padding:5px; background:white;">
-                                        keyboard_arrow_up
-                                        </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </a>
                         </span>
                     </div>
                 </div>
@@ -497,6 +490,8 @@
 
 
     <!--   Core JS Files   -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                      
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/core/popper.min.js"></script>
     <script src="assets/js/bootstrap-material-design.js"></script>
