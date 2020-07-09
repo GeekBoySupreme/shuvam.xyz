@@ -32,7 +32,7 @@ body {
     margin-right: 0;
     max-width: 102%;
     overflow-x: hidden;
-    background: #fff;
+    background: #1e2430;
     font-family: 'PT Mono', monospace;
 }
 
@@ -74,8 +74,8 @@ body {
     padding:5px;
 }
 .about_title_track{
-    padding:10px;
-    margin:5px;
+    padding:10px 10px 20px 0px;
+    margin:8px 8px 15px 0px;
     font-size:26px;
 }
 
@@ -95,7 +95,7 @@ body {
 
 .texter,
 .navbar-toggler-icon {
-    color: rgb(74, 74, 74) !important;
+    color: rgb(243, 243, 243) !important;
 }
 
 .navbar-transparent .logo,
@@ -135,7 +135,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    color: rgb(64, 64, 64);
+    color: #f0f0f0;
 }
 
 #footie {
@@ -174,7 +174,7 @@ body {
 }
 
 .nav-link{
-    color: #3c4858 !important;
+    color: #f0f0f0 !important;
 }
 
 .title
@@ -185,8 +185,8 @@ body {
 }
 .description
 {
-    color: rgb(64, 64, 64);
-    font-family: 'Open sans', sans-serif;
+    color: #f0f0f0;
+    font-family: 'Jost', sans-serif;
 
 }
 
@@ -331,11 +331,24 @@ ul {
     text-align:left;
     font-size:20px;
     line-height:1.6;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 
 #section_holder
 {
     width:50%;
+}
+
+.talk_list p {
+    color: rgb(37, 139, 255);
+}
+
+.talk_list a:hover{
+    border-right: 3px solid rgb(223, 94, 255);
+}
+
+.card_content {
+    width: 80%;
+    margin:  10px auto;
 }

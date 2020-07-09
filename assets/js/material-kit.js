@@ -17,7 +17,7 @@ $(document).ready(function() {
     BrowserDetect.init();
 
     // Init Material scripts for buttons ripples, inputs animations etc, more info on the next link https://github.com/FezVrasta/bootstrap-material-design#materialjs
-    $('body').bootstrapMaterialDesign();
+    // $('body').bootstrapMaterialDesign();
 
     window_width = $(window).width();
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
     $navbar_collapse = $('.navbar').find('.navbar-collapse');
 
     //  Activate the Tooltips
-    $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
+    // $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
 
 
     // FileInput
@@ -71,12 +71,12 @@ $(document).ready(function() {
     }
 
     // Activate Popovers
-    $('[data-toggle="popover"]').popover();
+    //$('[data-toggle="popover"]').popover();
 
     // Active Carousel
-    $('.carousel').carousel({
-        interval: 3000
-    });
+    // $('.carousel').carousel({
+    //     interval: 3000
+    // });
 
     //Activate tags
     // we style the badges with our colors

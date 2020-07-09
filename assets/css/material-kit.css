@@ -1,17 +1,4 @@
-/*! =========================================================
- *
- * Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition)
- *
- * =========================================================
- *
- * Product Page: https://www.creative-tim.com/product/material-kit-pro
- * Available with purchase of license from https://www.creative-tim.com/product/material-kit-pro
- * Copyright 2018 Creative Tim (https://www.creative-tim.com)
- * License Creative Tim (https://www.creative-tim.com/license)
- *
- * ========================================================= */
-
- a i {
+a i {
      font-size: 22px;
      margin: 5px;
  }
@@ -25,7 +12,7 @@
  }
 
  .description {
-     font-family: 'Open sans', sans-serif;
+    font-family: 'Jost', sans-serif;
  }
 
 .card {
@@ -71,9 +58,9 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #f0f0f0;
     text-align: left;
-    background-color: #fafafa;
+    background-color: #212d38;
 }
 
 [tabindex="-1"]:focus {
@@ -815,7 +802,7 @@ h4,
 
 h5,
 .h5 {
-    font-size: 1.25rem;
+    font-size: 1.27rem;
 }
 
 h6,
@@ -4091,7 +4078,7 @@ tbody.collapse.show {
 
 .nav-link {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
 }
 
 .nav-link:hover,
@@ -4592,7 +4579,7 @@ tbody.collapse.show {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #28303f;
     background-clip: border-box;
     
     border-radius: 0.25rem;
@@ -10910,7 +10897,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 body {
     background-color: #E5E5E5;
-    color: #3C4858;
+    color: #f0f0f0;
 }
 
 legend {
@@ -10950,7 +10937,7 @@ a .material-icons {
 }
 
 .main {
-    background: #FFFFFF;
+    background: #1e2430;
     position: relative;
     z-index: 3;
 }
@@ -11246,10 +11233,11 @@ fieldset[disabled] .form-check .form-check-input,
     margin-bottom: 30px;
     margin-top: 30px;
     border-radius: 6px;
-    color: rgba(0, 0, 0, 0.87);
-    background: #fff;
+    color: rgb(58, 137, 255);
+    background: #252d3b;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    min-height: 370px;
 }
 
 .card .card-category:not([class*="text-"]) {
@@ -11515,7 +11503,7 @@ fieldset[disabled] .form-check .form-check-input,
 }
 
 .card .author a {
-    color: #3C4858;
+    color: #f0f0f0;
     text-decoration: none;
 }
 
@@ -14198,8 +14186,8 @@ textarea {
     border-radius: 3px;
     padding: 0.625rem 0;
     margin-bottom: 20px;
-    color: #555;
-    background-color: #fff !important;
+    color: #f0f0f0;
+    background-color: #171b25 !important;
     box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -14813,7 +14801,7 @@ textarea {
 }
 
 .info .info-title {
-    color: #3C4858;
+    color: #f0f0f0;
     margin: 1.75rem 0 0.875rem;
 }
 
@@ -14926,8 +14914,8 @@ h4,
 
 h5,
 .h5 {
-    font-size: 1.0625rem;
-    line-height: 1.55em;
+    font-size: 1.1345rem;
+    line-height: 1.65em;
     margin-bottom: 15px;
 }
 
@@ -14978,7 +14966,7 @@ small,
 .footer-big h4 a,
 .media .media-heading,
 .media .media-heading a {
-    color: #3C4858;
+    color: #f0f0f0;
     text-decoration: none;
 }
 
@@ -15104,22 +15092,9 @@ h2.title {
 }
 
 .nav-tabs .nav-link {
-    border-bottom: 0.214rem solid transparent;
-}
-
-.nav-tabs .nav-link {
     color: #555;
 }
 
-.nav-tabs .nav-link.active {
-    color: rgba(0, 0, 0, 0.87);
-    border-color: #9c27b0;
-}
-
-.nav-tabs .nav-link.active:hover,
-.nav-tabs .nav-link.active:focus {
-    border-color: #9c27b0;
-}
 
 .nav-tabs .nav-link.disabled {
     color: #999;
@@ -15135,15 +15110,6 @@ h2.title {
     color: white;
 }
 
-.nav-tabs.header-primary .nav-link.active {
-    color: #fff;
-    border-color: #fff;
-}
-
-.nav-tabs.header-primary .nav-link.active:hover,
-.nav-tabs.header-primary .nav-link.active:focus {
-    border-color: #fff;
-}
 
 .nav-tabs.header-primary .nav-link.disabled {
     color: rgba(255, 255, 255, 0.84);
@@ -15159,10 +15125,7 @@ h2.title {
     color: white;
 }
 
-.nav-tabs.bg-inverse .nav-link.active {
-    color: #fff;
-    border-color: #fff;
-}
+
 
 .nav-tabs.bg-inverse .nav-link.active:hover,
 .nav-tabs.bg-inverse .nav-link.active:focus {
@@ -16463,7 +16426,7 @@ footer .footer-brand {
 
 footer .footer-brand:hover,
 footer .footer-brand:focus {
-    color: #3C4858;
+    color: #f0f0f0;
 }
 
 footer .copyright {
@@ -16773,7 +16736,7 @@ footer .pull-center {
     border-radius: 50%;
     position: relative;
     z-index: -1;
-    color: #3C4858;
+    color: #f0f0f0;
     font-size: 0.875rem;
 }
 
@@ -17311,7 +17274,7 @@ footer .pull-center {
         margin-right: 0 !important;
         z-index: 1032;
         visibility: visible;
-        background-color: #999;
+        background-color: #171b25;
         overflow-y: visible;
         border-top: none;
         text-align: left;
@@ -17335,7 +17298,7 @@ footer .pull-center {
         height: 100%;
         width: 100%;
         position: absolute;
-        background-color: #fff;
+        background-color: #1d252e;
         display: block;
         content: "";
         z-index: 1;
@@ -17350,7 +17313,7 @@ footer .pull-center {
         z-index: 3;
     }
     .navbar-collapse .navbar-nav .nav-item .nav-link {
-        color: #3C4858;
+        color: #f0f0f0;
         margin: 5px 15px;
     }
     .navbar-collapse .navbar-nav .nav-item.button-container .nav-link {
@@ -17359,7 +17322,7 @@ footer .pull-center {
     .navbar-collapse .navbar-nav .nav-item:after {
         width: calc(100% - 30px);
         content: "";
-        display: block;
+        display: none;
         height: 1px;
         margin-left: 15px;
         background-color: #e5e5e5;
