@@ -1,0 +1,45 @@
+{
+    "projects": [
+        {
+            "project_name" : "xyz",
+            "project_description" : "Lorem Ipsum",
+            "project_thumbnail" : "segegaeb",
+            "project_link" : "adgaabab"
+        },
+        {
+            "project_name" : "xyz",
+            "project_description" : "Lorem Ipsum",
+            "project_thumbnail" : "segegaeb",
+            "project_link" : "adgaabab"
+        }
+    ],
+    "talks": [
+        {
+            "talk_name" : "sgsrgr",
+            "talk_venue" : "sdsdsb",
+            "talk_link" : "sdbsfbsfbs"
+        }
+    ],
+    "blogs": [
+        {
+            "blog_title" : "UI Testing for Dummies",
+            "blog_description" : "A long time ago ina  Galaxy far, far away, lived the cult of UX Gods",
+            "blog_link" : "https://uxdesign.cc/ui-testing-for-dummies-a05557997de1"
+        },
+        {
+            "blog_title" : "The Watch Wars - Battle for the Wearables",
+            "blog_description" : "Google’s efforts at creating the perfect Wearable far preceded the release of Apple Watch Series 1.",
+            "blog_link" : "https://medium.com/swlh/the-watch-wars-battle-for-the-wearables-774a92c73b82"
+        },
+        {
+            "blog_title" : "Democratizing ML - Rise of the Teachable Machines",
+            "blog_description" : "Late in 2018, Google Creative Labs came out with the concept of Teachable Machines. A Web-based demo that allowed anyone to train a Neural Network.",
+            "blog_link" : "https://medium.com/swlh/democratizing-ml-rise-of-the-teachable-machines-20dad067abae"
+        },
+        {
+            "blog_title" : "DevFest Kolkata - Putting the pieces together",
+            "blog_description" : "April 28th, 2019 - “What do we do for this DevFest?”",
+            "blog_link" : "https://medium.com/gdg-kolkata/devfest-kolkata-putting-the-pieces-together-ce19d27ae5e6"
+        }
+    ]
+}

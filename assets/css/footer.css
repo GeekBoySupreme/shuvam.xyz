@@ -1,3 +1,8 @@
+#footer {
+    background-color: #0f1018;
+    margin-top: 50px;
+}
+
 #footer .container {
     text-align: left;
     display: block;
@@ -133,19 +138,6 @@
 }
 
 
-
-/* For scroll bar */
-body::-webkit-scrollbar {
-    width: 0.4em;
-
-}
-
-body::-webkit-scrollbar-track {
-    background-color: #dddddd;
-}
-
-body::-webkit-scrollbar-thumb {
-    height: 200px;
-    background-color: #999;
-    outline: 1px solid slategrey;
+#footer i {
+    font-size: 18px;
 }

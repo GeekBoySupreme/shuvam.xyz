@@ -69,6 +69,8 @@
     
     <div class="main" style="margin-top: 70px;">
             
+        <input id="page_type" type="hidden" value="homepage"/>
+
         <div class="container">   
                 <p>&nbsp;</p>
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
@@ -80,7 +82,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8">
-                            <!--Card-->
+                            
                             <h2 class="title">
                                 Shuvam Manna, <br/>
                                 <span id="blue_text">Software Engineer, UX Generalist</span>
@@ -90,6 +92,40 @@
                             <p><h4 class="description" id="tracks">At the moment, I'm Freelancing and Indie-Hacking, working on Projects such as <a href="https://artemisspace.netlify.app" id="blue_text"><b>Artemis</b></a>. I enjoy clicking Pictures, writing Blogs, giving talks, and playing Music in my free time.</h4></p>
                             <p><h4 class="description"  id="tracks"><span id="blue_text"><b>PS - </b></span>Still waiting for my Hogwarts Acceptance Letter  🦉</h4></p>
 
+                            <div class="social_box">
+                                <ul class="social_list">
+                                    <a target="blank" href="https://twitter.com/shuvam360">
+                                        <li class="social_logo">
+                                            <i class="fab fa-twitter"></i>
+                                        </li>
+                                    </a>
+                                    <a target="blank" href="https://linkedin.com/in/shuvam-manna">
+                                        <li class="social_logo">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </li>
+                                    </a>
+                                    <a target="blank" href="https://dribbble.com/shuvammanna">
+                                        <li class="social_logo">
+                                            <i class="fab fa-dribbble"></i>
+                                        </li>
+                                    </a>
+                                    <a target="blank" href="https://github.com/geekboysupreme">
+                                        <li class="social_logo">
+                                            <i class="fab fa-github"></i>
+                                        </li>
+                                    </a>
+                                    <a target="blank" href="https://medium.com/@shuvam.manna">
+                                        <li class="social_logo">
+                                            <i class="fab fa-medium-m"></i>
+                                        </li>
+                                    </a>
+                                    <a target="blank" href="https://behance.net/shuvammanna">
+                                        <li class="social_logo">
+                                            <i class="fab fa-behance"></i>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
                 </div>
                 <!--/.First row-->
@@ -98,7 +134,7 @@
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
                     <!--First column-->
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s" id="work">
-                        <!--Card-->
+                        
                         <p>&nbsp;</p>
                         <h2 class="title" id="tracks">What I do?</h2>
                         
@@ -110,10 +146,9 @@
                         
                         <!--/.Card-->
                     </div>
-                    <!--/.First column-->
-                    <!--Second column-->
+                   
                     <div class="col-lg-6">
-                        <!--Card-->
+                        
                         <p>&nbsp;</p>
                         <div class="row">
                                 <div class="col-lg-5 col-md-5 col-sm-5" id="p1">
@@ -150,37 +185,45 @@
                                         <h5 class="description">Building interactive communities.</h5>
                                 </p>
                             </div>
-                </div>
-                    <!--/.Second column-->
-                </div>
-                <!--/.First row-->
-                <p>&nbsp;</p>
-               
+                        </div>
+                    </div>
                </div>
-                <!--/.First row-->
+
+
+                <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                    <div class="col-lg-8 col-md-8 col-sm-8 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                        <p>&nbsp;</p>
+                       <h2 class="title" id="tracks">Recent Posts</h2>
+                        <ul class="talk_list blog_list" id="blog_list">
+
+                        </ul>
+                        <a href="./blog.html" class="description" id="blue_text"><b>... all posts</b></a>
+                    </div>
+                </div>
+
+
 
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
 
                     <!--Second column-->
                     <div class="col-lg-6 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
-                       <!--Card-->
+                       
                        
                        <p>&nbsp;</p>
                        <h2 class="title" id="tracks">Talks & Presentations</h2>
-                           <!--Card-->
+                           
                           <p><h5 class="description">I'm regular at Community Meetups and Conferences in the city and have speak on the trends in Web Development, Actions on Google, and mixing up different technologies.</h5></p>
-                          <br/>
-                          <!-- <a href="" class="description" id="blue_text"><h4></h4>View All <i class="fas fa-chevron-right"></i></h4></a> -->
-                   </div>
+                          <a href="" class="description" id="blue_text"><b>...all talks</b></a>
+                        </div>
                    <!--/.Second column-->
 
                        <!--First column-->
                        <div class="col-lg-6 col-md-6 col-sm-6">
-                           <!--Card-->
+                           
                            <p>&nbsp;</p>
                            
-                           <!--Card-->
-                           <ul class="talk_list">
+                           
+                           <ul class="talk_list" id="talk_list">
                             <li>
                                 <a href="#"class="nav-link">
                                     <span><b>Actions on Google</b></span>
@@ -205,16 +248,8 @@
                                     <p><b>Neo4j Community Day</b></p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#"class="nav-link">
-                                    <span><b>Building Conversations in UX</b></span>
-                                    <p><b>Cloud Study Jam</b></p>
-                                </a>
-                            </li>
                            
                         </ul>
-                           <p>
-                           </p>
                            
                            <!--/.Card-->
                            
@@ -222,18 +257,19 @@
                        <!--/.First column-->
                       
                    </div>
-                   <h2 class="title" id="tracks" style="text-align:left;">Experiments</h2>
-                   <div class="row" data-wow-delay="0.2s" id="project">     
+                   <h2 class="title" id="tracks" style="text-align:left;">Projects</h2>
+                   <div class="row" data-wow-delay="0.2s" id="project_list">     
                            
                     <!--Second column-->
                     <div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                       <!--Card-->
+                       
                        <div class="card" id="card">
                       
                        <img class="img-fluid" src="https://res.cloudinary.com/distortedaura/image/upload/v1587623521/website_assets/world.png" />
                        <div class="card_content">
                            <span class="about_title_track">Loop One</span>
                            <p class="description">A virtual Browser-based OS Environment that makes it easier for rookies to integrate apps.</p>
+                            <a class="project_link">Open Link <i class="fas fa-external-link-alt"></i></a>
                         </div>  
                         </div> 
                    </div>
@@ -275,14 +311,12 @@
  
                    <p>&nbsp;</p>
                    <p>&nbsp;</p>
-</div>
+            </div>
         </div>
     </div>
 
     <div id="footer">
-        <div class="container" style="padding-top: 20px;">
-            <p>&nbsp;</p>
-           
+        <div class="container">
             <div class="row" id="contact">
                 <p>&nbsp;</p>
                 <div class="col-lg-12"><h2 class="title" id="tracks">Looking to start a Project? <a href="mailto:shuvam.manna@gmail.com" style="color:rgb(12, 90, 207);">Let's Talk.</a></h2>
@@ -290,31 +324,56 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="share-social"></div>
-                            <a id="social_button" href="https://github.com/GeekBoySupreme" target="_blank"> Github</a><a>&nbsp;</a>
-                            <a id="social_button" href="https://twitter.com/shuvam360" target="_blank"> Twitter</a><a>&nbsp;</a>
-                            <a id="social_button" href="https://linkedin.com/in/shuvam-manna/" target="_blank"> LinkedIn</a><a>&nbsp;</a>
-                            <a id="social_button" href="https://instagram.com/the_distorted_aura" target="_blank"> Instagram</a><a>&nbsp;</a>
-                            <a id="social_button" href="https://medium.com/@shuvam.manna" target="_blank"> Medium</a><a>&nbsp;</a>
-                            <a>&nbsp;</a>
-                        </span>
+                    <div class="social_box">
+                        <ul class="social_list">
+                            <a target="blank" href="https://twitter.com/shuvam360">
+                                <li class="social_logo">
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                            </a>
+                            <a target="blank" href="https://linkedin.com/in/shuvam-manna">
+                                <li class="social_logo">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                            <a target="blank" href="https://dribbble.com/shuvammanna">
+                                <li class="social_logo">
+                                    <i class="fab fa-dribbble"></i>
+                                </li>
+                            </a>
+                            <a target="blank" href="https://github.com/geekboysupreme">
+                                <li class="social_logo">
+                                    <i class="fab fa-github"></i>
+                                </li>
+                            </a>
+                            <a target="blank" href="https://medium.com/@shuvam.manna">
+                                <li class="social_logo">
+                                    <i class="fab fa-medium-m"></i>
+                                </li>
+                            </a>
+                            <a target="blank" href="https://behance.net/shuvammanna">
+                                <li class="social_logo">
+                                    <i class="fab fa-behance"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
                     </div>
                 </div>
+                
             </div>
-        </div>
-        <br/>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <div class="container" style="padding-bottom: 20px;">
+
+            <br/>
+            <div class="container" style="padding-bottom: 20px;">
             
             <div class="row">
                 <div class="col-lg-5 copyright" style="font-family: 'PT Mono', monospace; font-size:14px;">
-                    <b>distorted_aura</b> <span class="hide-bar"> | </span><a href="shuvam.netlify.com" id="details_redirect" href="#"><b>Made with ❤️</b></a>
+                    <a href="shuvam.netlify.com" id="details_redirect" href="#"><b>Made with </b><i class="fas fa-heart heart_red"></i></a>
                 </div>
                
             </div>
         </div>
-    
+        </div>    
 
 </div>
 
@@ -324,6 +383,7 @@
                       
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
+    <script src="assets/js/generate_content.js"></script>
     
 </body>
 
