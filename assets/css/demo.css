@@ -354,7 +354,7 @@ ul {
     padding-left: 30px;
 }
 
-.talk_list a:hover{
+.talk_list a:hover, .talk_list a:active{
     border-left: 2px solid rgb(223, 94, 255);
     border-bottom: 2px solid transparent;
 }
@@ -397,7 +397,7 @@ ul {
     transition: 0.3s ease;
 }
 
-.highlight_text:hover {
+.highlight_text:hover,  .highlight_text:active{
     color: rgb(253, 135, 204);
 }
 
@@ -419,7 +419,7 @@ ul {
     border-radius: 50px; */
 }
 
-.social_list li:hover {
+.social_list li:hover, .social_list li:active {
     color: rgb(253, 135, 204);
 }
 
@@ -435,6 +435,14 @@ ul {
         margin-top: -20px;
     }
     
+    .blog_list {
+        border: none;
+    }
+
+    .talk_list a:hover, .talk_list a:active{
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+    }
 }
 
 
@@ -449,6 +457,7 @@ ul {
   
   body::-webkit-scrollbar-thumb {
     background: #3b6acf!important;
+    border-radius: 50px;
   }
 
 
@@ -456,20 +465,28 @@ ul {
       color: rgb(255, 109, 72);
   }
 
+  .js_yellow {
+      color: rgb(255, 230, 0);
+  }
+
+  .cookie_brown {
+      color: rgb(172, 103, 46);
+  }
+
   .project_link {
       color: white;
       font-weight: 600;
       font-family: 'Jost', sans-serif;
-      padding: 4px 10px 4px 15px;
+      padding: 6px 10px 6px 15px;
       background-color: #0a0b0f;
       border-radius: 5px;
       transition: all 0.2s ease;
       cursor: pointer;
       position: relative;
-      top: 8px;
+      top: 12px;
   }
   .project_link i {
-      font-size: 15px;
+      font-size: 16px;
   }
 
   .project_link:hover, .project_link:active {
@@ -495,4 +512,19 @@ ul {
 
   .img-fluid {
       border-radius: 4px;
+  }
+
+  .go_right {
+      float: right;
+      font-size: 11px;
+      border-bottom: 2px solid rgb(253, 113, 196);
+  }
+
+  .blog_new::after {
+      background: rgb(255, 113, 196);
+      color: black;
+      padding: 0px 8px;
+      border-radius: 5px;
+      position: relative;
+      left: 8px;
   }

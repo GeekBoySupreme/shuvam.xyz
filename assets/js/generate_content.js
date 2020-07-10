@@ -33,7 +33,7 @@ function render_at_home(data) {
 
     var blog_html = '';
     for(var i=0; i<4; i++) {
-        blog_html += "<li> <a href='"+ data.blogs[i].blog_link +"' class='nav-link'> <span><b>"+ data.blogs[i].blog_title +"</b></span> <p><b>"+ data.blogs[i].blog_description +"</b></p> </a> </li>";
+        blog_html += "<li> <a href='"+ data.blogs[i].blog_link +"' class='nav-link'> <span><b>"+ data.blogs[i].blog_title +"</b></span> <span class='go_right blog_"+ data.blogs[i].blog_tag +"'><b>"+ data.blogs[i].blog_date +"</b></span> <p><b>"+ data.blogs[i].blog_description +"</b></p> </a> </li>";
     }
 
     document.getElementById("blog_list").innerHTML = blog_html;
@@ -42,7 +42,7 @@ function render_at_home(data) {
     
     var talk_html = '';
     for(var i=0; i<4; i++) {
-        talk_html += "<li> <a href='"+ data.talks[i].talk_link +"' class='nav-link'> <span><b>"+ data.talks[i].talk_name +"</b></span> <p><b>"+ data.talks[i].talk_venue +"</b></p> </a> </li>";
+        talk_html += "<li> <a href='"+ data.talks[i].talk_link +"' class='nav-link'> <span><b>"+ data.talks[i].talk_name +"</b></span><p><b>"+ data.talks[i].talk_venue +"</b></p> </a> </li>";
     }
 
     document.getElementById("talk_list").innerHTML = talk_html;
@@ -73,7 +73,7 @@ function render_at_home(data) {
 function render_at_blog(data) {
     var blog_html = '';
     for(var i=0; i<data.length; i++) {
-        blog_html += "<li> <a href='"+ data[i].blog_link +"' class='nav-link'> <span><b>"+ data[i].blog_title +"</b></span> <p><b>"+ data[i].blog_description +"</b></p> </a> </li>";
+        blog_html += "<li> <a href='"+ data[i].blog_link +"' class='nav-link'> <span><b>"+ data[i].blog_title +"</b></span> <span class='go_right blog_"+ data[i].blog_tag +"'><b>"+ data[i].blog_date +"</b></span><p><b>"+ data[i].blog_description +"</b></p> </a> </li>";
     }
 
     document.getElementById("blog_list").innerHTML = blog_html;
