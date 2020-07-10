@@ -60,7 +60,7 @@ body {
     line-height: 1.5;
     color: #f0f0f0;
     text-align: left;
-    background-color: #212d38;
+    background-color: #0a0b0f;
 }
 
 [tabindex="-1"]:focus {
@@ -462,7 +462,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #12181f;
     text-align: left;
     background-color: #fafafa;
 }
@@ -4079,11 +4079,14 @@ tbody.collapse.show {
 .nav-link {
     display: block;
     padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    border-bottom: 2px solid transparent;
+    border-radius: 0px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
     text-decoration: none;
+    border-bottom: 2px solid rgb(58, 137, 255);
 }
 
 .nav-link.disabled {
@@ -4579,7 +4582,7 @@ tbody.collapse.show {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #28303f;
+    background-color: #1d232e;
     background-clip: border-box;
     
     border-radius: 0.25rem;
@@ -10937,7 +10940,7 @@ a .material-icons {
 }
 
 .main {
-    background: #1e2430;
+    background: #0a0b0f;
     position: relative;
     z-index: 3;
 }
@@ -11234,7 +11237,7 @@ fieldset[disabled] .form-check .form-check-input,
     margin-top: 30px;
     border-radius: 6px;
     color: rgb(58, 137, 255);
-    background: #252d3b;
+    background: #1d232e;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     min-height: 370px;
@@ -14187,7 +14190,8 @@ textarea {
     padding: 0.625rem 0;
     margin-bottom: 20px;
     color: #f0f0f0;
-    background-color: #171b25 !important;
+    background-color: rgba(6, 13, 27, 0.6) !important;
+    backdrop-filter: blur(5px);
     box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -14212,7 +14216,6 @@ textarea {
     padding: 0.9375rem;
     font-weight: 400;
     text-transform: none;
-    border-radius: 3px;
     line-height: 20px;
 }
 
@@ -17274,7 +17277,7 @@ footer .pull-center {
         margin-right: 0 !important;
         z-index: 1032;
         visibility: visible;
-        background-color: #171b25;
+        background-color: rgb(16, 19, 26);
         overflow-y: visible;
         border-top: none;
         text-align: left;
@@ -17298,7 +17301,7 @@ footer .pull-center {
         height: 100%;
         width: 100%;
         position: absolute;
-        background-color: #1d252e;
+        background-color: rgb(16, 19, 26);
         display: block;
         content: "";
         z-index: 1;

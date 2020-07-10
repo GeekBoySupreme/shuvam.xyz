@@ -32,7 +32,7 @@ body {
     margin-right: 0;
     max-width: 102%;
     overflow-x: hidden;
-    background: #1e2430;
+    background: #0a0b0f;
     font-family: 'PT Mono', monospace;
 }
 
@@ -364,10 +364,37 @@ ul {
 }
 
 .img-dp {
-    width: 90%;
+    width: 324px;
+    height: 324px;
     margin: 0 auto;
     margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 50%;
 }
+
+.profile_badge {
+    width: 40px;
+    height:40px;
+    border-radius: 50px;
+    background-color: white;
+    color: rgb(253, 135, 204);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -70px;
+    left: 70%;
+}
+
+.profile_badge i {
+    font-size: 22px;
+}
+
+.highlight_text {
+    font-weight: 400;
+    color: rgb(37, 139, 255);
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   
