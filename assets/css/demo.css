@@ -291,7 +291,7 @@ Other color edits
 }
 
 #blue_text {
-    color: rgb(0, 102, 255);
+    color: rgb(52, 133, 255);
 }
 
 #green_text {
@@ -340,15 +340,44 @@ ul {
     width:50%;
 }
 
+
+.talk_list {
+    list-style-type:none;
+}
+
 .talk_list p {
     color: rgb(37, 139, 255);
 }
 
+.talk_list a{
+    border-left: 3px solid transparent;
+    padding-left: 30px;
+}
+
 .talk_list a:hover{
-    border-right: 3px solid rgb(223, 94, 255);
+    border-left: 3px solid rgb(223, 94, 255);
 }
 
 .card_content {
     width: 80%;
     margin:  10px auto;
+}
+
+.img-dp {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .talk_list a {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .img-dp {
+        margin-top: -20px;
+    }
+    
 }
