@@ -3,17 +3,37 @@
         {
             "project_name" : "xyz",
             "project_description" : "Lorem Ipsum",
-            "project_thumbnail" : "segegaeb",
+            "project_thumbnail" : "https://miro.medium.com/max/2000/1*0G01nMPD--K_MrKhhkurtw.jpeg",
             "project_link" : "adgaabab"
         },
         {
             "project_name" : "xyz",
-            "project_description" : "Lorem Ipsum",
-            "project_thumbnail" : "segegaeb",
+            "project_description" : "Lorem Ipsum adfvhalnalegva vqa egalvhaelgaldeva aegn qeghaecaksnfalhglkahlkadnv,/mv.adj'akvsfvsbs",
+            "project_thumbnail" : "https://miro.medium.com/max/2000/1*0G01nMPD--K_MrKhhkurtw.jpeg",
             "project_link" : "adgaabab"
         }
     ],
     "talks": [
+        {
+            "talk_name" : "sgsrgr",
+            "talk_venue" : "sdsdsb",
+            "talk_link" : "sdbsfbsfbs"
+        },
+        {
+            "talk_name" : "sgsrgr",
+            "talk_venue" : "sdsdsb",
+            "talk_link" : "sdbsfbsfbs"
+        },
+        {
+            "talk_name" : "sgsrgr",
+            "talk_venue" : "sdsdsb",
+            "talk_link" : "sdbsfbsfbs"
+        },
+        {
+            "talk_name" : "sgsrgr",
+            "talk_venue" : "sdsdsb",
+            "talk_link" : "sdbsfbsfbs"
+        },
         {
             "talk_name" : "sgsrgr",
             "talk_venue" : "sdsdsb",

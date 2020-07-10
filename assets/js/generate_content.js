@@ -50,17 +50,18 @@ function render_at_home(data) {
 
    
     var project_html = '';
-    for(var i=0; i<3; i++) {
+    console.log(data.projects)
+    for(var i=0; i<2; i++) {
         project_html += '<div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s"> \
                             <div class="card" id="card"> \
-                            <img class="img-fluid" src='+ +'/> \
+                            <img class="img-fluid" src="'+ data.projects[i].project_thumbnail +'"/> \
                             <div class="card_content"> \
-                           <span class="about_title_track">'+ +'</span> \
-                           <p class="description">'+ +'</p> \
-                            <a class="project_link" href="'+ +'">Open Link <i class="fas fa-external-link-alt"></i></a> \
-                        </div>  \
-                        </div> \
-                   </div>';
+                            <span class="about_title_track"><b>'+ data.projects[i].project_name+'</b></span> \
+                            <p class="description">'+ data.projects[i].project_description +'</p> \
+                            <a class="project_link" href="'+ data.projects[i].project_link +'">Open Link <i class="fas fa-external-link-alt"></i></a> \
+                            </div>  \
+                            </div> \
+                        </div>';
     }
 
     document.getElementById("project_list").innerHTML = project_html;
@@ -76,6 +77,18 @@ function render_at_blog(data) {
     }
 
     document.getElementById("blog_list").innerHTML = blog_html;
+}
+
+function render_at_talks(data) {
+     
+    var talk_html = '';
+    for(var i=0; i<data.length; i++) {
+        talk_html += "<li> <a href='"+ data[i].talk_link +"' class='nav-link'> <span><b>"+ data[i].talk_name +"</b></span> <p><b>"+ data[i].talk_venue +"</b></p> </a> </li>";
+    }
+
+    document.getElementById("talk_list").innerHTML = talk_html;
+
+
 }
 
 
