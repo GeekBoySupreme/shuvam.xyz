@@ -350,12 +350,13 @@ ul {
 }
 
 .talk_list a{
-    border-left: 3px solid transparent;
+    border-left: 2px solid transparent;
     padding-left: 30px;
 }
 
 .talk_list a:hover{
-    border-left: 3px solid rgb(223, 94, 255);
+    border-left: 2px solid rgb(223, 94, 255);
+    border-bottom: 2px solid transparent;
 }
 
 .card_content {
@@ -393,6 +394,11 @@ ul {
 .highlight_text {
     font-weight: 400;
     color: rgb(37, 139, 255);
+    transition: 0.3s ease;
+}
+
+.highlight_text:hover {
+    color: rgb(253, 135, 204);
 }
 
 
@@ -408,3 +414,17 @@ ul {
     }
     
 }
+
+
+  /*------- Scrollbar --------------*/
+  body::-webkit-scrollbar {
+    width: 0.25rem!important;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #3b6acf!important;
+  }

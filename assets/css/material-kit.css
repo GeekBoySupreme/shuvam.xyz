@@ -14191,7 +14191,7 @@ textarea {
     margin-bottom: 20px;
     color: #f0f0f0;
     background-color: rgba(6, 13, 27, 0.6) !important;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 
