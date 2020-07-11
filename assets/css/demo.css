@@ -365,8 +365,7 @@ ul {
 }
 
 .img-dp {
-    width: 324px;
-    height: 324px;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 15px;
     object-fit: cover;
@@ -384,7 +383,7 @@ ul {
     align-items: center;
     justify-content: center;
     top: -70px;
-    left: 70%;
+    left: 65%;
 }
 
 .profile_badge i {
