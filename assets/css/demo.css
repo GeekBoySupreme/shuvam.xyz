@@ -355,7 +355,7 @@ ul {
 }
 
 .talk_list a:hover, .talk_list a:active{
-    border-left: 2px solid rgb(223, 94, 255);
+    border-left: 2px solid rgb(253, 113, 196);
     border-bottom: 2px solid transparent;
 }
 
@@ -419,7 +419,7 @@ ul {
 }
 
 .social_list li:hover, .social_list li:active {
-    color: rgb(253, 135, 204);
+    color: rgb(253, 113, 196);
 }
 
 
@@ -519,11 +519,21 @@ ul {
       border-bottom: 2px solid rgb(253, 113, 196);
   }
 
-  .blog_new::after {
-      background: rgb(255, 113, 196);
-      color: black;
-      padding: 0px 8px;
-      border-radius: 5px;
-      position: relative;
-      left: 8px;
+  .link_underline {
+    border-bottom: 2px solid rgb(253, 113, 196);
+}
+
+  a:active {
+      color: white!important;
+  }
+
+  .notes_text {
+      padding-left: unset;
+      border: unset;
+      border-bottom: 2px solid rgb(253, 113, 196);
+      cursor: pointer;
+  }
+
+  .notes_text:hover {
+      color: rgb(37, 139, 255);
   }
