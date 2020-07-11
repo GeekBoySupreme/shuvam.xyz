@@ -501,9 +501,7 @@ ul {
 
   .float_right {
       position: relative;
-      float: right;
       top: -50px;
-      right: 5px;
   }
 
   #project_list {
