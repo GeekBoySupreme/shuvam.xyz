@@ -11,7 +11,7 @@ body{
 
 #social_button
 {
-    color:rgb(49, 118, 223);
+    color:rgb(89, 150, 240);
     font-size:18px;
     padding-right:18px;
     padding-top:15px;
@@ -519,19 +519,13 @@ ul {
       border-bottom: 2px solid rgb(253, 113, 196);
   }
 
-  .link_underline {
-    border-bottom: 2px solid rgb(253, 113, 196);
-}
-
-  a:active {
-      color: white!important;
-  }
-
   .notes_text {
       padding-left: unset;
       border: unset;
       border-bottom: 2px solid rgb(253, 113, 196);
       cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
   }
 
   .notes_text:hover {
