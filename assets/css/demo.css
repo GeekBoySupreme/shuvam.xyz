@@ -482,7 +482,7 @@ ul {
       transition: all 0.2s ease;
       cursor: pointer;
       position: relative;
-      top: 12px;
+      bottom: -25px;
   }
   .project_link i {
       font-size: 16px;
