@@ -403,7 +403,9 @@ ul {
 .social_list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 25px;
+    margin-top: 10px;
 }
 
 .social_list li {

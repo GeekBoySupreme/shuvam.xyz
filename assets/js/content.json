@@ -7,7 +7,7 @@
             "project_link" : "https://artemisspace.netlify.app"
         },
         {
-            "project_name" : "Joy - the Bot(?)",
+            "project_name" : "Joy - Bot(?)",
             "project_description" : "A Chatbot that implements rule-based Natural Language Processing with Javascript.",
             "project_thumbnail" : "./assets/img/kit/joy.png",
             "project_link" : "https://geekboysupreme.github.io/joy/"
