@@ -51,11 +51,11 @@ function render_at_home(data) {
    
     var project_html = '';
     console.log(data.projects)
-    for(var i=0; i<2; i++) {
+    for(var i=0; i<3; i++) {
         project_html += '<div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s"> \
                             <div class="card" id="card"> \
                             <img class="img-fluid" src="'+ data.projects[i].project_thumbnail +'"/> \
-                            <div class="card_content"> \
+                            <div class="card_content"> <br/>\
                             <span class="about_title_track"><b>'+ data.projects[i].project_name+'</b></span> \
                             <p class="description">'+ data.projects[i].project_description +'</p> \
                             <a target="blank" class="project_link" href="'+ data.projects[i].project_link +'">Open Link <i class="fas fa-external-link-alt"></i></a> \

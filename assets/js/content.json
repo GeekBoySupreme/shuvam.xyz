@@ -1,16 +1,22 @@
 {
     "projects": [
         {
-            "project_name" : "xyz",
-            "project_description" : "Lorem Ipsum",
-            "project_thumbnail" : "https://miro.medium.com/max/2000/1*0G01nMPD--K_MrKhhkurtw.jpeg",
-            "project_link" : "adgaabab"
+            "project_name" : "Artemis",
+            "project_description" : "A Portal to check Rocket Launch Status and schedules around the world in real-time.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://artemisspace.netlify.app"
         },
         {
-            "project_name" : "xyz",
-            "project_description" : "Lorem Ipsum adfvhalnalegva vqa egalvhaelgaldeva aegn qeghaecaksnfalhglkahlkadnv,/mv.adj'akvsfvsbs",
-            "project_thumbnail" : "https://miro.medium.com/max/2000/1*0G01nMPD--K_MrKhhkurtw.jpeg",
-            "project_link" : "adgaabab"
+            "project_name" : "Joy - the Bot(?)",
+            "project_description" : "A Chatbot that implements rule-based Natural Language Processing with Javascript.",
+            "project_thumbnail" : "./assets/img/kit/joy.png",
+            "project_link" : "https://geekboysupreme.github.io/joy/"
+        },
+        {
+            "project_name" : "Loop One",
+            "project_description" : "A Browser-based OS Environment that makes it easier for rookies to integrate apps.",
+            "project_thumbnail" : "./assets/img/kit/loopone.png",
+            "project_link" : "https://github.com/GeekBoySupreme/loopone"
         }
     ],
     "talks": [
