@@ -52,7 +52,7 @@ function render_at_home(data) {
     var project_html = '';
     console.log(data.projects)
     for(var i=0; i<3; i++) {
-        project_html += '<div class="col-lg-4 col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s"> \
+        project_html += '<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.2s"> \
                             <div class="card" id="card"> \
                             <img class="img-fluid" src="'+ data.projects[i].project_thumbnail +'"/> \
                             <div class="card_content"> <br/>\
