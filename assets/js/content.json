@@ -15,28 +15,43 @@
     ],
     "talks": [
         {
-            "talk_name" : "sgsrgr",
-            "talk_venue" : "sdsdsb",
-            "talk_link" : "sdbsfbsfbs"
+            "talk_name" : "Actions on Google : A Crash Course",
+            "talk_venue" : "Google Developers Group Kolkata",
+            "talk_link" : "https://www.youtube.com/watch?v=ixqA6IlFRC0&t=332s"
         },
         {
-            "talk_name" : "sgsrgr",
-            "talk_venue" : "sdsdsb",
-            "talk_link" : "sdbsfbsfbs"
+            "talk_name" : "Hot JS in ML Soup",
+            "talk_venue" : "Let's Build Kolkata 2020",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Hot%20JS%20in%20ML%20Soup.pdf"
         },
         {
-            "talk_name" : "sgsrgr",
-            "talk_venue" : "sdsdsb",
-            "talk_link" : "sdbsfbsfbs"
+            "talk_name" : "Music. Art. ML.",
+            "talk_venue" : "TensorFlow All-Around 2019",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Music.%20Art.%20ML.pdf"
         },
         {
-            "talk_name" : "sgsrgr",
-            "talk_venue" : "sdsdsb",
-            "talk_link" : "sdbsfbsfbs"
+            "talk_name" : "Building Adaptive UX with ML",
+            "talk_venue" : "DevFestBlr 2019 | DroidCon India 2019",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Building%20UX%20with%20ML%20%23DevFestBlr.pdf"
         },
         {
-            "talk_name" : "sgsrgr",
-            "talk_venue" : "sdsdsb",
+            "talk_name" : "Optimizing Search with Graphs",
+            "talk_venue" : "Neo4j Community Day",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Graph%20Search%20Optimization.pdf"
+        },
+        {
+            "talk_name" : "Building Conversations",
+            "talk_venue" : "DevFest Kolkata 2018",
+            "talk_link" : "https://www.youtube.com/watch?v=Digu3t_Q7S4&t=1252s"
+        },
+        {
+            "talk_name" : "Bots for Messenger",
+            "talk_venue" : "Facebook Developer Circle",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/F8%20slides.pptx.pdf"
+        },
+        {
+            "talk_name" : "Conversations as a UX",
+            "talk_venue" : "Cloud Study Jam 2019",
             "talk_link" : "sdbsfbsfbs"
         }
     ],
