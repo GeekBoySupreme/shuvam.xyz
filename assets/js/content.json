@@ -8,13 +8,13 @@
         },
         {
             "project_name" : "Joy - Bot(?)",
-            "project_description" : "A Chatbot that implements rule-based Natural Language Processing with Javascript.",
+            "project_description" : "A Chatbot that implements rule-based NLP with Javascript.",
             "project_thumbnail" : "./assets/img/kit/joy.png",
             "project_link" : "https://geekboysupreme.github.io/joy/"
         },
         {
             "project_name" : "Loop One",
-            "project_description" : "A Browser-based OS Environment that makes it easier for rookies to integrate apps.",
+            "project_description" : "A Browser-based OS that makes it easier for rookies to integrate apps.",
             "project_thumbnail" : "./assets/img/kit/loopone.png",
             "project_link" : "https://github.com/GeekBoySupreme/loopone"
         }
