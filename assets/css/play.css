@@ -5,13 +5,22 @@
 .image_container {
     width: 100%;
     background-color: #6176CF;
-    padding-top: 50px;
-    margin-top: 20px;
+    padding-top: 10px;
+    margin-top: -1px;
 }
 
 .arctic_footer_desktop {
     width: 50%;
     margin: 10px auto 0px auto;
+}
+
+.waves {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.waves img {
+    width: 100%;
 }
 
 .arctic_footer_desktop img {
@@ -74,7 +83,7 @@
 .lootbox {
     position: absolute;
     top: -37px;
-    left: 61%;
+    left: 59%;
     animation: MoveUpDown 0.7s linear infinite;
     transition: all 0.3s ease;
 }
@@ -90,6 +99,12 @@
 
     top: 80px;
     left: 20%;
+}
+
+.ice_plant {
+    position: absolute;
+    top: 210px;
+    left: 53%;
 }
 
 
