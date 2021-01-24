@@ -1,0 +1,86 @@
+#footer {
+    margin-top: 0px!important;
+}
+
+.image_container {
+    width: 100%;
+    background-color: #6176CF;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.arctic_footer_desktop {
+    width: 50%;
+    margin: 10px auto 0px auto;
+}
+
+.arctic_footer_desktop img {
+    max-width: 100%;
+}
+
+.land_desktop {
+    width: 100%;
+    margin: 10px auto 0px auto;
+}
+
+.land_desktop_img {
+    max-width: 100%;
+    z-index: 1;
+}
+
+.artefact {
+    z-index: 10;
+}
+
+.artefact_small {
+    width: 50px;
+}
+
+.artefact_mini {
+    width: 30px;
+}
+
+.artefact_medium {
+    width: 130px;
+}
+
+.sword_in_land {
+    position: absolute;
+    top: 120px;
+    left: 55%;
+}
+
+.land_flames {
+    position: absolute;
+
+    top: 10px;
+    left: 28%;
+}
+
+.ziggurat {
+    position: absolute;
+    top: 120px;
+    left: 34%;
+}
+
+.nova {
+    position: absolute;
+    top: -37px;
+    left: 61%;
+    animation: MoveUpDown 0.8s linear infinite;
+    transition: all 0.3s ease;
+
+}
+
+
+
+/*-------------------- Animations ----------------------------*/
+
+@keyframes MoveUpDown {
+    1%, 100% {
+        top: -34px;
+    }
+    50% { 
+        top: -40px;
+    }
+}
