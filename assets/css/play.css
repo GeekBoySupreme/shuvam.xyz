@@ -141,3 +141,44 @@
         top: -40px;
     }
 }
+
+
+
+/*-------------------- Cards ----------------------------*/
+.reading_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#FF6969;
+    margin: 15px 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.reading_card img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.support_tag {
+    padding: 4px 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: fle;
+}
+
+
+.listening_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#313131;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.listening_card img {
+    width: 100px;
+    border-radius: 6px;
+}
