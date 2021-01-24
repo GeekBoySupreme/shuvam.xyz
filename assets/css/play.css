@@ -149,7 +149,7 @@
     border-radius: 6px;
     padding: 10px 10px;
     background-color:#FF6969;
-    margin: 15px 0px;
+    margin: 10px 0px;
 
     display: flex;
     flex-direction: row;
@@ -173,12 +173,40 @@
     border-radius: 6px;
     padding: 10px 10px;
     background-color:#313131;
-    margin: 15px 0px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: row;
 }
 
 .listening_card img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.photographs_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#f84489;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.photographs_card img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.watching_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#c98e3c;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.watching_card img {
     width: 100px;
     border-radius: 6px;
 }

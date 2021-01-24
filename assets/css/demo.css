@@ -531,3 +531,14 @@ ul {
   .notes_text:hover {
       color: rgb(37, 139, 255);
   }
+
+
+  .footer_gif {
+      width: 50%;
+      position: relative;
+      top: -70px;
+  }
+
+  .fun_sticker {
+      width: 60%;
+  }
