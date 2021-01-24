@@ -107,6 +107,12 @@
     left: 53%;
 }
 
+.pokeball {
+    position: absolute;
+    top: 170px;
+    left: 33%;
+}
+
 
 /*-------------------- Animations ----------------------------*/
 
