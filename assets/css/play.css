@@ -114,6 +114,23 @@
 }
 
 
+#img_myface {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.slapface_div {
+    text-align: center;
+}
+
+.slap_tag {
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'PT Mono', monospace;
+    word-spacing: 5px;
+}
+
 /*-------------------- Animations ----------------------------*/
 
 @keyframes MoveUpDown {
