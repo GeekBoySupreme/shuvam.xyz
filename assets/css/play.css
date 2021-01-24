@@ -67,11 +67,30 @@
     position: absolute;
     top: -37px;
     left: 61%;
-    animation: MoveUpDown 0.8s linear infinite;
+    animation: MoveUpDown 1s linear infinite;
     transition: all 0.3s ease;
-
 }
 
+.lootbox {
+    position: absolute;
+    top: -37px;
+    left: 61%;
+    animation: MoveUpDown 0.7s linear infinite;
+    transition: all 0.3s ease;
+}
+
+.runepillar {
+    position: absolute;
+    top: 260px;
+    left: 35%;
+}
+
+.ice_flames {
+    position: absolute;
+
+    top: 80px;
+    left: 20%;
+}
 
 
 /*-------------------- Animations ----------------------------*/
