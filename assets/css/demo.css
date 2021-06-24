@@ -436,7 +436,7 @@ li .nav-link {
   position: relative;
   left: -3px;
   margin-right: 15px;
-  color: rgb(37, 139, 255);
+  color: rgb(143, 143, 143);
   transition: all 0.3s ease;
   /* padding: 5px;
     border: 1px solid red;
@@ -460,50 +460,6 @@ li i {
 
   .img-dp {
     margin-top: -20px;
-  }
-
-  .heart_red {
-    color: rgb(255, 109, 72);
-  }
-
-  .js_yellow {
-    color: rgb(255, 230, 0);
-  }
-
-  .cookie_brown {
-    color: rgb(172, 103, 46);
-  }
-
-  .project_link {
-    color: white;
-    font-weight: 600;
-    font-family: "Jost", sans-serif;
-    padding: 6px 10px 6px 15px;
-    background-color: #111113;
-    border-radius: 5px;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    position: relative;
-    bottom: -25px;
-  }
-  .project_link i {
-    font-size: 16px;
-  }
-
-  .project_link:hover,
-  .project_link:active {
-    background-color: #0a1327;
-    color: white;
-  }
-
-  .float_right {
-    position: relative;
-    top: -50px;
-  }
-
-  #project_list {
-    position: relative;
-    top: -50px;
   }
 
   .img-fluid {
@@ -545,11 +501,6 @@ li i {
   padding: 5px 20px 30px 20px;
   background: rgba(100, 100, 100, 0.05);
   border-radius: 4px;
-
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .project_card .about_title_track {
@@ -573,6 +524,45 @@ li i {
 .project_card a:hover {
   color: rgb(52, 133, 255);
   border-bottom: 2px solid rgb(52, 133, 255);
+}
+
+.study_card a {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.study_card a:hover {
+  color: rgb(52, 133, 255);
+  border-bottom: 2px solid rgb(52, 133, 255);
+}
+
+.study_description {
+  color: rgb(165, 165, 165);
+  font-family: "Jost", sans-serif;
+  word-spacing: 1.7px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.study_card .thumbnail {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.study_card .content {
+  padding: 2px 25px;
+}
+
+.study_card {
+  margin-bottom: 25px;
+  background: rgba(100, 100, 100, 0.05);
+  border-radius: 4px;
+  padding-bottom: 20px;
 }
 
 body::-webkit-scrollbar {

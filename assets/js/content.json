@@ -37,12 +37,6 @@
             "project_link" : "https://dinojump.space"
         },
         {
-            "project_name" : "Joy-bot(?)",
-            "project_description" : "A Chatbot that implements rule-based NLP with Javascript.",
-            "project_thumbnail" : "./assets/img/kit/joy.png",
-            "project_link" : "https://geekboysupreme.github.io/joy/"
-        },
-        {
             "project_name" : "Fables",
             "project_description" : "Fables was a supposed to enable restaurants to earn by selling coupons in mid-2020.",
             "project_thumbnail" : "./assets/img/kit/artemis.png",
@@ -53,6 +47,12 @@
             "project_description" : "A Portal to check Rocket Launch Status and schedules around the world in real-time.",
             "project_thumbnail" : "./assets/img/kit/artemis.png",
             "project_link" : "https://artemisspace.netlify.app"
+        },
+        {
+            "project_name" : "Joy-bot(?)",
+            "project_description" : "A Chatbot that implements rule-based NLP with Javascript.",
+            "project_thumbnail" : "./assets/img/kit/joy.png",
+            "project_link" : "https://geekboysupreme.github.io/joy/"
         }
     ],
     "talks": [
