@@ -25,6 +25,11 @@ html {
   margin-left: 4.166666667%;
 }
 
+a:focus,
+a:active {
+  color: white;
+}
+
 body {
   margin-right: 0;
   max-width: 102%;
@@ -68,11 +73,22 @@ body {
 }
 .tag_details {
   padding: 5px;
+  font-family: "Jost", sans-serif;
+  word-spacing: 1.7px;
+  letter-spacing: 0.7px;
 }
 .about_title_track {
   padding: 10px 10px 10px 0px;
   margin: 8px 8px 8px 0px;
   font-size: 26px;
+}
+
+.nav-link p {
+  font-family: "Jost", sans-serif;
+  word-spacing: 1.7px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 #notice_banner {
@@ -178,6 +194,26 @@ body {
   font-family: "Jost", sans-serif;
   word-spacing: 1.7px;
   letter-spacing: 0.7px;
+}
+
+.glyph_small {
+  font-size: 14px;
+}
+
+.link_text {
+  color: white;
+  padding: 2px 6px 2px 7px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.link_text:hover {
+  background: rgb(60, 112, 255);
+  color: white;
+  font-weight: 400;
 }
 
 .icon {
@@ -299,10 +335,22 @@ Other Pages
 .header-icon-text {
   top: 6px;
   position: relative;
+  letter-spacing: 3px;
 }
 
 ul {
-  padding-left: unset;
+  padding-left: 0px;
+}
+
+li .nav-link {
+  padding-left: 0px;
+  margin-bottom: 15px;
+}
+
+.blog_date_tag {
+  font-size: 12px;
+  position: relative;
+  top: -4px;
 }
 
 .textblock {
@@ -324,18 +372,14 @@ ul {
 }
 
 .talk_list p {
-  color: rgb(37, 139, 255);
+  color: rgb(165, 165, 165);
 }
 
 .talk_list a {
-  border-left: 2px solid transparent;
-  padding-left: 30px;
 }
 
 .talk_list a:hover,
 .talk_list a:active {
-  border-left: 2px solid rgb(253, 113, 196);
-  border-bottom: 2px solid transparent;
 }
 
 .card_content {
@@ -418,18 +462,107 @@ li i {
     margin-top: -20px;
   }
 
-  .blog_list {
-    border: none;
+  .heart_red {
+    color: rgb(255, 109, 72);
   }
 
-  .talk_list a:hover,
-  .talk_list a:active {
-    border-left: 2px solid transparent;
-    border-bottom: 2px solid transparent;
+  .js_yellow {
+    color: rgb(255, 230, 0);
+  }
+
+  .cookie_brown {
+    color: rgb(172, 103, 46);
+  }
+
+  .project_link {
+    color: white;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    padding: 6px 10px 6px 15px;
+    background-color: #111113;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    bottom: -25px;
+  }
+  .project_link i {
+    font-size: 16px;
+  }
+
+  .project_link:hover,
+  .project_link:active {
+    background-color: #0a1327;
+    color: white;
+  }
+
+  .float_right {
+    position: relative;
+    top: -50px;
+  }
+
+  #project_list {
+    position: relative;
+    top: -50px;
+  }
+
+  .img-fluid {
+    border-radius: 4px;
+  }
+
+  .go_right {
+    float: right;
+    font-size: 11px;
+    border-bottom: 2px solid rgb(253, 113, 196);
+  }
+
+  .notes_text {
+    padding-left: unset;
+    border: unset;
+    border-bottom: 2px solid rgb(253, 113, 196);
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .notes_text:hover {
+    color: rgb(37, 139, 255);
+  }
+
+  .footer_gif {
+    width: 50%;
+    position: relative;
+    top: -70px;
+  }
+
+  .fun_sticker {
+    width: 60%;
   }
 }
 
-/*------- Scrollbar --------------*/
+.project_card .about_title_track {
+  font-size: 21px;
+}
+
+.project_card .description {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.project_card a {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.project_card a:hover {
+  color: rgb(52, 133, 255);
+  border-bottom: 2px solid rgb(52, 133, 255);
+}
+
 body::-webkit-scrollbar {
   width: 0.25rem !important;
 }
@@ -441,85 +574,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #3b6acf !important;
   border-radius: 50px;
-}
-
-.heart_red {
-  color: rgb(255, 109, 72);
-}
-
-.js_yellow {
-  color: rgb(255, 230, 0);
-}
-
-.cookie_brown {
-  color: rgb(172, 103, 46);
-}
-
-.project_link {
-  color: white;
-  font-weight: 600;
-  font-family: "Jost", sans-serif;
-  padding: 6px 10px 6px 15px;
-  background-color: #111113;
-  border-radius: 5px;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  position: relative;
-  bottom: -25px;
-}
-.project_link i {
-  font-size: 16px;
-}
-
-.project_link:hover,
-.project_link:active {
-  background-color: #0a1327;
-  color: white;
-}
-
-.blog_list {
-  border-left: 1px solid rgb(19, 30, 49);
-}
-
-.float_right {
-  position: relative;
-  top: -50px;
-}
-
-#project_list {
-  position: relative;
-  top: -50px;
-}
-
-.img-fluid {
-  border-radius: 4px;
-}
-
-.go_right {
-  float: right;
-  font-size: 11px;
-  border-bottom: 2px solid rgb(253, 113, 196);
-}
-
-.notes_text {
-  padding-left: unset;
-  border: unset;
-  border-bottom: 2px solid rgb(253, 113, 196);
-  cursor: pointer;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.notes_text:hover {
-  color: rgb(37, 139, 255);
-}
-
-.footer_gif {
-  width: 50%;
-  position: relative;
-  top: -70px;
-}
-
-.fun_sticker {
-  width: 60%;
 }
