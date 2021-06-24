@@ -225,7 +225,7 @@ body {
   font-weight: 400;
   white-space: nowrap;
   margin-right: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
 
 .link_text_button i {
@@ -625,4 +625,13 @@ body::-webkit-scrollbar-thumb {
 .notes_text:hover {
   color: rgb(37, 139, 255);
   border-bottom: 2px solid rgb(37, 139, 255);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
