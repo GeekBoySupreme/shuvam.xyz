@@ -565,6 +565,28 @@ li i {
   padding-bottom: 20px;
 }
 
+.study_card .link_text {
+  padding: 2px 6px 4px 7px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  font-weight: 400;
+  white-space: nowrap;
+  border: none;
+  color: white;
+}
+
+.study_card .link_text:hover {
+  padding: 2px 6px 4px 7px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  font-weight: 400;
+  white-space: nowrap;
+  border: none;
+  color: white;
+}
+
 body::-webkit-scrollbar {
   width: 0.25rem !important;
 }
