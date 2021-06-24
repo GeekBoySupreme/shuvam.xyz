@@ -587,6 +587,10 @@ li i {
   color: white;
 }
 
+.community_role {
+  margin-bottom: 15px;
+}
+
 body::-webkit-scrollbar {
   width: 0.25rem !important;
 }

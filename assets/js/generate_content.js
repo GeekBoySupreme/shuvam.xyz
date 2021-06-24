@@ -48,7 +48,7 @@ function render_at_home(data) {
   document.getElementById("blog_list").innerHTML = blog_html;
 
   var talk_html = "";
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     talk_html +=
       "<li> <a target='blank' href='" +
       data.talks[i].talk_link +
@@ -67,6 +67,9 @@ function render_at_home(data) {
     project_html +=
       '<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.2s"> \
                             <div class="project_card"> <br/>\
+      <img src="' +
+      data.projects[i].project_thumbnail +
+      '" alt="project_logo" height="30px" style="margin-bottom: 16px; border-radius: 3px;"/><br/> \
                             <span class="about_title_track"><b>' +
       data.projects[i].project_name +
       '</b></span> \
