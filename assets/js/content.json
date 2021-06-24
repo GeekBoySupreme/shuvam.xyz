@@ -1,22 +1,58 @@
 {
     "projects": [
         {
-            "project_name" : "Artemis",
-            "project_description" : "A Portal to check Rocket Launch Status and schedules around the world in real-time.",
+            "project_name" : "What the Health",
+            "project_description" : "What the Health is a platform that makes the act of collecting health data by public officials, fun.",
             "project_thumbnail" : "./assets/img/kit/artemis.png",
-            "project_link" : "https://artemisspace.netlify.app"
+            "project_link" : "https://whatthehealth.netlify.app"
         },
         {
-            "project_name" : "Joy - Bot(?)",
+            "project_name" : "Show Keys",
+            "project_description" : "A utility to visualize keypresses on your browser. Just that. It does that one thing.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://www.producthunt.com/posts/show-keys"
+        },
+        {
+            "project_name" : "TabTrum",
+            "project_description" : "TabTrum is a light and fast Chrome Extension that lets you save multiple tab combinations.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://www.producthunt.com/posts/tabtrum"
+        },
+        {
+            "project_name" : "CouponHub",
+            "project_description" : "A platform to exchange and trade coupons you would not need to get the ones you would.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://couponhub.space"
+        },
+        {
+            "project_name" : "Pablito Planeta",
+            "project_description" : "A zodiac-classification microsite based on Pablo Stanley's Horoscope series on Instagram.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://pablitoplaneta.space"
+        },
+        {
+            "project_name" : "Dinojump",
+            "project_description" : "A variant of the Chrome dino game where you yell JUMP to make the T-Rex jump.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://dinojump.space"
+        },
+        {
+            "project_name" : "Joy-bot(?)",
             "project_description" : "A Chatbot that implements rule-based NLP with Javascript.",
             "project_thumbnail" : "./assets/img/kit/joy.png",
             "project_link" : "https://geekboysupreme.github.io/joy/"
         },
         {
-            "project_name" : "Loop One",
-            "project_description" : "A Browser-based OS that makes it easier for rookies to integrate apps.",
-            "project_thumbnail" : "./assets/img/kit/loopone.png",
-            "project_link" : "https://github.com/GeekBoySupreme/loopone"
+            "project_name" : "Fables",
+            "project_description" : "Fables was a supposed to enable restaurants to earn by selling coupons in mid-2020.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://fables-test.netlify.app"
+        },
+        {
+            "project_name" : "Artemis",
+            "project_description" : "A Portal to check Rocket Launch Status and schedules around the world in real-time.",
+            "project_thumbnail" : "./assets/img/kit/artemis.png",
+            "project_link" : "https://artemisspace.netlify.app"
         }
     ],
     "talks": [

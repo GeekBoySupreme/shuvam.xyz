@@ -540,6 +540,18 @@ li i {
   }
 }
 
+.project_card {
+  margin-bottom: 30px;
+  padding: 5px 20px 30px 20px;
+  background: rgba(100, 100, 100, 0.05);
+  border-radius: 4px;
+
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .project_card .about_title_track {
   font-size: 21px;
 }
