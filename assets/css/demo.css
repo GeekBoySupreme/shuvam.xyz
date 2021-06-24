@@ -472,19 +472,6 @@ li i {
     border-bottom: 2px solid rgb(253, 113, 196);
   }
 
-  .notes_text {
-    padding-left: unset;
-    border: unset;
-    border-bottom: 2px solid rgb(253, 113, 196);
-    cursor: pointer;
-    color: white;
-    transition: all 0.3s ease;
-  }
-
-  .notes_text:hover {
-    color: rgb(37, 139, 255);
-  }
-
   .footer_gif {
     width: 50%;
     position: relative;
@@ -602,4 +589,18 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #3b6acf !important;
   border-radius: 50px;
+}
+
+.notes_text {
+  padding-left: unset;
+  border: unset;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.notes_text:hover {
+  color: rgb(37, 139, 255);
+  border-bottom: 2px solid rgb(37, 139, 255);
 }
