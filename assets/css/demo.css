@@ -216,6 +216,28 @@ body {
   font-weight: 400;
 }
 
+.link_text_button {
+  color: white;
+  padding: 10px 16px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+  font-weight: 400;
+  white-space: nowrap;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.link_text_button i {
+  font-size: 16px;
+}
+
+.link_text_button:hover {
+  background: rgb(60, 112, 255);
+  color: white;
+  font-weight: 400;
+}
+
 .icon {
   font-size: 30px;
   background: #333232;

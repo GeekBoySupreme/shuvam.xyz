@@ -11013,12 +11013,12 @@ legend {
 }
 
 a {
-  color: #9c27b0;
+  color: white;
 }
 
 a:hover,
 a:focus {
-  color: #89229b;
+  color: white;
   text-decoration: none;
 }
 
