@@ -25,6 +25,9 @@ function renderData(data) {
     case "talkpage":
       render_at_talks(data.talks);
       break;
+    case "projectpage":
+      render_at_projects(data.projects);
+      break;
   }
 }
 
@@ -63,7 +66,7 @@ function render_at_home(data) {
 
   var project_html = "";
   console.log(data.projects);
-  for (var i = 0; i < data.projects.length; i++) {
+  for (var i = 0; i < 6; i++) {
     project_html +=
       '<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.2s"> \
                             <div class="project_card"> <br/>\
@@ -121,6 +124,32 @@ function render_at_talks(data) {
   }
 
   document.getElementById("talk_list").innerHTML = talk_html;
+}
+
+function render_at_projects(data) {
+  var project_html = "";
+  for (var i = 0; i < data.length; i++) {
+    project_html +=
+      '<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.2s"> \
+                            <div class="project_card"> <br/>\
+      <img src="' +
+      data[i].project_thumbnail +
+      '" alt="project_logo" height="30px" style="margin-bottom: 16px; border-radius: 3px;"/><br/> \
+                            <span class="about_title_track"><b>' +
+      data[i].project_name +
+      '</b></span> \
+                            <p class="description" style="margin-top:10px">' +
+      data[i].project_description +
+      '</p> \
+                            <a target="blank" class="project_link" href="' +
+      data[i].project_link +
+      '">Check it out</a> \
+                            </div>  \
+                            </div> \
+                        </div>';
+  }
+
+  document.getElementById("project_list").innerHTML = project_html;
 }
 
 callpage();
