@@ -330,19 +330,19 @@ Other color edits
 }
 
 #red_text {
-  color: rgb(235, 65, 50);
+  color: rgb(255, 129, 117);
 }
 
 #blue_text {
-  color: rgb(52, 133, 255);
+  color: rgb(111, 169, 255);
 }
 
 #green_text {
-  color: rgb(252, 189, 0);
+  color: rgb(255, 215, 95);
 }
 
 #orange_text {
-  color: rgb(252, 189, 0);
+  color: rgb(255, 206, 58);
 }
 
 @media (max-width: 992px) {
