@@ -35,7 +35,7 @@ function render_at_home(data) {
   var blog_html = "";
   for (var i = 0; i < 4; i++) {
     blog_html +=
-      "<li> <a target='blank' href='" +
+      "<li> <a target='_blank' href='" +
       data.blogs[i].blog_link +
       "' class='nav-link'> <span><b>" +
       data.blogs[i].blog_title +
@@ -53,7 +53,7 @@ function render_at_home(data) {
   var talk_html = "";
   for (var i = 0; i < 5; i++) {
     talk_html +=
-      "<li> <a target='blank' href='" +
+      "<li> <a target='_blank' href='" +
       data.talks[i].talk_link +
       "' class='nav-link'> <span><b>" +
       data.talks[i].talk_name +
@@ -94,7 +94,7 @@ function render_at_blog(data) {
   var blog_html = "";
   for (var i = 0; i < data.length; i++) {
     blog_html +=
-      "<li> <a target='blank' href='" +
+      "<li> <a target='_blank' href='" +
       data[i].blog_link +
       "' class='nav-link'> <span><b>" +
       data[i].blog_title +
@@ -114,7 +114,7 @@ function render_at_talks(data) {
   var talk_html = "";
   for (var i = 0; i < data.length; i++) {
     talk_html +=
-      "<li> <a target='blank' href='" +
+      "<li> <a target='_blank' href='" +
       data[i].talk_link +
       "' class='nav-link'> <span><b>" +
       data[i].talk_name +
