@@ -601,7 +601,7 @@ li i {
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem !important;
+  width: 0rem !important;
 }
 
 body::-webkit-scrollbar-track {
