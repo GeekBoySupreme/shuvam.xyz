@@ -113,6 +113,13 @@
     ],
     "blogs": [
         {
+            "blog_title": "How I built a #2 Product of the Day in 2 hours",
+            "blog_description": "A rundown of how I built Show Keys, a chrome extension to show the keys you type on the browser window.",
+            "blog_link": "https://www.producthunt.com/stories/how-i-built-a-2-product-of-the-day-in-2-hours",
+            "blog_date": "Aug 9, 2021",
+            "blog_tag": "new"
+        },
+        {
             "blog_title": "Octo's guide to the Git-verse 👾",
             "blog_description": "Earth to Earth-22. I hope this is a time when things have gone ahead. But we are yet to fully understand how git works under the hood.",
             "blog_link": "https://medium.com/swlh/octos-guide-to-the-git-verse-b929a6e82c3d?sk=dd72d71fa70c2ebebdf37310c21e58e0",
@@ -152,13 +159,6 @@
             "blog_description" : "Late in 2018, Google Creative Labs came out with the concept of Teachable Machines. A Web-based demo that allowed anyone to train a Neural Network.",
             "blog_link" : "https://medium.com/swlh/democratizing-ml-rise-of-the-teachable-machines-20dad067abae",
             "blog_date" : "Nov 10, 2019",
-            "blog_tag" : "old"
-        },
-        {
-            "blog_title" : "DevFest Kolkata - Putting the pieces together",
-            "blog_description" : "April 28th, 2019 - “What do we do for this DevFest?”",
-            "blog_link" : "https://medium.com/gdg-kolkata/devfest-kolkata-putting-the-pieces-together-ce19d27ae5e6",
-            "blog_date" : "Aug 16, 2019",
             "blog_tag" : "old"
         }
     ]
