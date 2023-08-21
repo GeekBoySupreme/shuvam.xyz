@@ -22,19 +22,19 @@
             "project_name" : "CouponHub",
             "project_description" : "A platform to exchange and trade coupons you would not need to get the ones you would.",
             "project_thumbnail" : "./assets/img/kit/couponhub.png",
-            "project_link" : "https://couponhub.space"
+            "project_link" : "https://couponhub.netlify.app"
         },
         {
             "project_name" : "Pablito Planeta",
             "project_description" : "A zodiac-classification microsite based on Pablo Stanley's Horoscope series on Instagram.",
             "project_thumbnail" : "./assets/img/kit/pablitoplaneta.png",
-            "project_link" : "https://pablitoplaneta.space"
+            "project_link" : "https://pablito-planeta.vercel.app"
         },
         {
             "project_name" : "Dinojump",
             "project_description" : "A variant of the Chrome dino game where you yell JUMP to make the T-Rex jump.",
             "project_thumbnail" : "./assets/img/kit/chromedino.png",
-            "project_link" : "https://dinojump.space"
+            "project_link" : "https://dinojumps.netlify.app"
         },
         {
             "project_name" : "Fables",
@@ -56,6 +56,11 @@
         }
     ],
     "talks": [
+        {
+            "talk_name": "(re)Learning riding the bicycle",
+            "talk_venue": "DevFest 2022, Kolkata",
+            "talk_link": "https://github.com/GeekBoySupreme/talks/blob/master/(re)Learning%20riding%20a%20bicycle.pptx.pdf"
+        },
         {
             "talk_name": "The S in Python stands for speed",
             "talk_venue": "The Python Week, Mehsana Developers' Club",
