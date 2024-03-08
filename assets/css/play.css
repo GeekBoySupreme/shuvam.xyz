@@ -1,0 +1,212 @@
+#footer {
+    margin-top: 0px!important;
+}
+
+.image_container {
+    width: 100%;
+    background-color: #6176CF;
+    padding-top: 10px;
+    margin-top: -1px;
+}
+
+.arctic_footer_desktop {
+    width: 50%;
+    margin: 10px auto 0px auto;
+}
+
+.waves {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.waves img {
+    width: 100%;
+}
+
+.arctic_footer_desktop img {
+    max-width: 100%;
+}
+
+.land_desktop {
+    width: 100%;
+    margin: 10px auto 0px auto;
+}
+
+.land_desktop_img {
+    max-width: 100%;
+    z-index: 1;
+}
+
+.artefact {
+    z-index: 10;
+}
+
+.artefact_small {
+    width: 50px;
+}
+
+.artefact_mini {
+    width: 30px;
+}
+
+.artefact_medium {
+    width: 130px;
+}
+
+.sword_in_land {
+    position: absolute;
+    top: 120px;
+    left: 55%;
+}
+
+.land_flames {
+    position: absolute;
+
+    top: 10px;
+    left: 28%;
+}
+
+.ziggurat {
+    position: absolute;
+    top: 120px;
+    left: 34%;
+}
+
+.nova {
+    position: absolute;
+    top: -37px;
+    left: 61%;
+    animation: MoveUpDown 1s linear infinite;
+    transition: all 0.3s ease;
+}
+
+.lootbox {
+    position: absolute;
+    top: -37px;
+    left: 59%;
+    animation: MoveUpDown 0.7s linear infinite;
+    transition: all 0.3s ease;
+}
+
+.runepillar {
+    position: absolute;
+    top: 260px;
+    left: 35%;
+}
+
+.ice_flames {
+    position: absolute;
+
+    top: 80px;
+    left: 20%;
+}
+
+.ice_plant {
+    position: absolute;
+    top: 210px;
+    left: 53%;
+}
+
+.pokeball {
+    position: absolute;
+    top: 170px;
+    left: 33%;
+}
+
+
+#img_myface {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.slapface_div {
+    text-align: center;
+}
+
+.slap_tag {
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'PT Mono', monospace;
+    word-spacing: 5px;
+}
+
+/*-------------------- Animations ----------------------------*/
+
+@keyframes MoveUpDown {
+    1%, 100% {
+        top: -34px;
+    }
+    50% { 
+        top: -40px;
+    }
+}
+
+
+
+/*-------------------- Cards ----------------------------*/
+.reading_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#FF6969;
+    margin: 10px 0px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.reading_card img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.support_tag {
+    padding: 4px 10px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: fle;
+}
+
+
+.listening_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#313131;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.listening_card img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.photographs_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#f84489;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.photographs_card img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.watching_card {
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color:#c98e3c;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.watching_card img {
+    width: 100px;
+    border-radius: 6px;
+}

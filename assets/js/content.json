@@ -1,0 +1,165 @@
+{
+    "projects": [
+        {
+            "project_name" : "What the Health",
+            "project_description" : "What the Health is a platform that makes the act of collecting health data by public officials, fun.",
+            "project_thumbnail" : "./assets/img/kit/whatthehealth.png",
+            "project_link" : "https://whatthehealth.netlify.app"
+        },
+        {
+            "project_name" : "Show Keys",
+            "project_description" : "A utility to visualize keypresses on your browser. Just that. It does that one thing.",
+            "project_thumbnail" : "./assets/img/kit/show-keys.png",
+            "project_link" : "https://www.producthunt.com/posts/show-keys"
+        },
+        {
+            "project_name" : "TabTrum",
+            "project_description" : "TabTrum is a light and fast Chrome Extension that lets you save multiple tab combinations.",
+            "project_thumbnail" : "./assets/img/kit/tabtrum.png",
+            "project_link" : "https://www.producthunt.com/posts/tabtrum"
+        },
+        {
+            "project_name" : "CouponHub",
+            "project_description" : "A platform to exchange and trade coupons you would not need to get the ones you would.",
+            "project_thumbnail" : "./assets/img/kit/couponhub.png",
+            "project_link" : "https://couponhub.netlify.app"
+        },
+        {
+            "project_name" : "Pablito Planeta",
+            "project_description" : "A zodiac-classification microsite based on Pablo Stanley's Horoscope series on Instagram.",
+            "project_thumbnail" : "./assets/img/kit/pablitoplaneta.png",
+            "project_link" : "https://pablito-planeta.vercel.app"
+        },
+        {
+            "project_name" : "Dinojump",
+            "project_description" : "A variant of the Chrome dino game where you yell JUMP to make the T-Rex jump.",
+            "project_thumbnail" : "./assets/img/kit/chromedino.png",
+            "project_link" : "https://dinojumps.netlify.app"
+        },
+        {
+            "project_name" : "Fables",
+            "project_description" : "Fables was a supposed to enable restaurants to earn by selling coupons in mid-2020.",
+            "project_thumbnail" : "https://media.giphy.com/media/xUOwG0IdF9xq4EHf0s/giphy.gif",
+            "project_link" : "https://fables-test.netlify.app"
+        },
+        {
+            "project_name" : "Artemis",
+            "project_description" : "A Portal to check Rocket Launch Status and schedules around the world in real-time.",
+            "project_thumbnail" : "https://media.giphy.com/media/I1f1AY8GQuRCDooCRk/giphy.gif",
+            "project_link" : "https://artemisspace.netlify.app"
+        },
+        {
+            "project_name" : "Joy-bot(?)",
+            "project_description" : "A Chatbot that implements rule-based NLP with Javascript.",
+            "project_thumbnail" : "https://media.giphy.com/media/K6oZyzYUE2GGQb27Tp/giphy.gif",
+            "project_link" : "https://geekboysupreme.github.io/joy/"
+        }
+    ],
+    "talks": [
+        {
+            "talk_name": "(re)Learning riding the bicycle",
+            "talk_venue": "DevFest 2022, Kolkata",
+            "talk_link": "https://github.com/GeekBoySupreme/talks/blob/master/(re)Learning%20riding%20a%20bicycle.pptx.pdf"
+        },
+        {
+            "talk_name": "The S in Python stands for speed",
+            "talk_venue": "The Python Week, Mehsana Developers' Club",
+            "talk_link": "https://www.youtube.com/watch?v=vrnsini0p3c"
+        },{
+            "talk_name": "Why do we Design? 💩",
+            "talk_venue": "Developer Student Club PGDAV",
+            "talk_link": "https://www.youtube.com/watch?v=logyvX7WBAo&t=2628s"
+        },
+        {
+            "talk_name" : "Actions on Google : A Crash Course 🖖",
+            "talk_venue" : "Google Developers Group Kolkata",
+            "talk_link" : "https://www.youtube.com/watch?v=ixqA6IlFRC0&t=332s"
+        },
+        {
+            "talk_name" : "Hot JS in ML Soup 🍜",
+            "talk_venue" : "Let's Build Kolkata 2020",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Hot%20JS%20in%20ML%20Soup.pdf"
+        },
+        {
+            "talk_name" : "Music. Art. ML. 🎸",
+            "talk_venue" : "TensorFlow All-Around 2019",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Music.%20Art.%20ML.pdf"
+        },
+        {
+            "talk_name" : "Building Adaptive UX with ML",
+            "talk_venue" : "DevFestBlr 2019 | DroidCon India 2019",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Building%20UX%20with%20ML%20%23DevFestBlr.pdf"
+        },
+        {
+            "talk_name" : "Optimizing Search with Graphs",
+            "talk_venue" : "Neo4j Community Day",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Graph%20Search%20Optimization.pdf"
+        },
+        {
+            "talk_name" : "Building Conversations 📣",
+            "talk_venue" : "DevFest Kolkata 2018",
+            "talk_link" : "https://www.youtube.com/watch?v=Digu3t_Q7S4&t=1252s"
+        },
+        {
+            "talk_name" : "Bots for Messenger",
+            "talk_venue" : "Facebook Developer Circle",
+            "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/F8%20slides.pptx.pdf"
+        },
+        {
+            "talk_name" : "Conversations as a UX",
+            "talk_venue" : "Cloud Study Jam 2019",
+            "talk_link" : " "
+        }
+    ],
+    "blogs": [
+        {
+            "blog_title": "How I built a #2 Product of the Day in 2 hours",
+            "blog_description": "A rundown of how I built Show Keys, a chrome extension to show the keys you type on the browser window.",
+            "blog_link": "https://www.producthunt.com/stories/how-i-built-a-2-product-of-the-day-in-2-hours",
+            "blog_date": "Aug 9, 2021",
+            "blog_tag": "new"
+        },
+        {
+            "blog_title": "Octo's guide to the Git-verse 👾",
+            "blog_description": "Earth to Earth-22. I hope this is a time when things have gone ahead. But we are yet to fully understand how git works under the hood.",
+            "blog_link": "https://medium.com/swlh/octos-guide-to-the-git-verse-b929a6e82c3d?sk=dd72d71fa70c2ebebdf37310c21e58e0",
+            "blog_date": "Jul 15, 2020",
+            "blog_tag": "new"
+        },
+        {
+            "blog_title": "Building tools to aid local businesses in the Pandemic 🙌",
+            "blog_description": "Fables is a project built in the course of a Hackathon in mid-June. The premise of the Hackathon was to build services, tools, and Hacks…",
+            "blog_link": "https://medium.com/@shuvam.manna/building-tools-to-aid-local-businesses-in-the-pandemic-288c9fc06ab5",
+            "blog_date": "Aug 20, 2020",
+            "blog_tag": "old"
+        },
+        {
+            "blog_title": "Re-imagining the UX of MyJio",
+            "blog_description": "This is a case study to reimagine the UX of MyJio and solve some of the Pain Points in the original App.",
+            "blog_link": "https://medium.com/@shuvam.manna/re-imagining-the-ux-of-myjio-7eabcf399352?sk=a2d1ea619a30c51ceebce52c04438d93",
+            "blog_date": "Aug 28, 2020",
+            "blog_tag": "new"
+        },
+        {
+            "blog_title" : "UI Testing for Dummies 😶",
+            "blog_description" : "A long time ago in a  Galaxy far, far away, lived the cult of UX Gods",
+            "blog_link" : "https://uxdesign.cc/ui-testing-for-dummies-a05557997de1",
+            "blog_date" : "Aug, 2020",
+            "blog_tag" : "new"
+        },
+        {
+            "blog_title" : "The Watch Wars - Battle for the Wearables ⌚",
+            "blog_description" : "Google’s efforts at creating the perfect Wearable far preceded the release of Apple Watch Series 1.",
+            "blog_link" : "https://medium.com/swlh/the-watch-wars-battle-for-the-wearables-774a92c73b82",
+            "blog_date" : "Nov 19, 2019",
+            "blog_tag" : "old"
+        },
+        {
+            "blog_title" : "Democratizing ML - Rise of the Teachable Machines 🤖",
+            "blog_description" : "Late in 2018, Google Creative Labs came out with the concept of Teachable Machines. A Web-based demo that allowed anyone to train a Neural Network.",
+            "blog_link" : "https://medium.com/swlh/democratizing-ml-rise-of-the-teachable-machines-20dad067abae",
+            "blog_date" : "Nov 10, 2019",
+            "blog_tag" : "old"
+        }
+    ]
+}

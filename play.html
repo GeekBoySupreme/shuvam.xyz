@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Shuvam Manna | Designer → Generalist">
+    <meta property="og:description"
+        content="Hi there! My name is Shuvam and I'm a Software Engineer, Designer → Generalist, from India.">
+    <meta property="og:image" content="http://shuvam.xyz/assets/img/kit/thumbnail.PNG">
+    <meta property="og:url" content="http://shuvam.xyz">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <title>
+        Shuvam Manna
+    </title>
+    <link rel="stylesheet" href="assets/css/material-kit.css?v=2.0.3">
+    <script src="https://kit.fontawesome.com/622afd0c30.js" crossorigin="anonymous"></script>
+    <!-- Documentation extras -->
+    <link type="text/css" href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono:wght@900&display=swap" rel="stylesheet">
+
+    <link href="assets/css/play.css" rel="stylesheet" />
+
+</head>
+
+<body class="landing-page" name="top" id="top">
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg " color-on-scroll="40"
+        id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate" style="height:70px;">
+                <a class="navbar-brand" href="/"><span id="gdg-logo"><b class="header-icon-text">🦄💙😎</b></a>
+                <button style="color:white" class="navbar-toggler" type="button" data-toggle="collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    🍔
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto" style="padding-top: 14px;">
+                    <li class="dropdown nav-item">
+                        <a href="./projects.html" data-page="index" class="nav-link">
+                            <span><b>Work</b></span>
+                        </a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a href="./about.html" data-page="index" class="nav-link">
+                            <span><b>About</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./play.html" data-page="resources" class="nav-link">
+                            <span><b id="header_text">Play</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" data-page="team" class="nav-link">
+                            <span><b id="header_text">Blog</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1rryNu6P4v7sCraf6ybMOy0GkyjuJE-oL/view?usp=sharing"
+                            data-page="team" class="nav-link">
+                            <span><b id="header_text">Resume</b></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./notes.html" data-page="team" class="nav-link">
+                            <span><b id="header_text">Notes</b></span>
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main" style="margin-top: 70px;">
+
+        <input id="page_type" type="hidden" value="play" />
+
+        <div class="container">
+            <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                <div class="col-lg-8 col-md-8 col-sm-8 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
+                    <p>&nbsp;</p>
+                    <h2 class="title" id="tracks">Welcome to the <span id="blue_text">Playground</span></h2>
+                    <br />
+            
+                    <h5 class="description">I do all sorts of things here. From realizing my broken dream of being a Game Designer . . .</h5>
+                    <h5 class="description">To Artsy stuff, picking up the old habit of reading books, watching Gameplay videos (somehow I find that even more intriguing that playing the games 🎮). I absolutely <b id="red_text">love</b> building and hacking together things, playing the violin and listening to Music, and often when I'm outside, enjoying a good game of cricket 🏏
+                    </h5>
+                    <br />
+                    <br />
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeIn slapface_div" data-wow-delay="0.2s">
+                    <img id="img_myface" onclick="hit_my_face()" src="assets/img/play/myface.svg"/>
+                    <h5 class="slap_tag">CLICK IMAGE 👆 TO SLAP</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="waves">
+        <img src="assets/img/play/waves.svg" />
+    </div>
+    <div class="image_container">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="land_desktop">
+                        <img onclick="show_egg('sword')" class="artefact artefact_small sword_in_land" src="assets/img/play/sword_in_land.svg" />
+                        <img onclick="show_egg('flames')" class="artefact artefact_small land_flames" src="assets/img/play/flames.gif" />
+                        <img onclick="show_egg('ziggurat')" class="artefact artefact_medium ziggurat" src="assets/img/play/ziggurat.svg" />
+                        <img onclick="show_egg('nova')" class="artefact artefact_mini nova" src="assets/img/play/nova.svg" />
+                        <img class="land_desktop_img" src="assets/img/play/land.svg" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="land_desktop">
+                        <img onclick="show_egg('ice plant')" class="artefact artefact_small ice_plant" src="assets/img/play/ice_flower.gif" />
+                        <img onclick="show_egg('pokeball')" class="artefact artefact_small pokeball" src="assets/img/play/pokeball.gif" />
+                        <img onclick="show_egg('ice flame')" class="artefact artefact_small ice_flames" src="assets/img/play/flames_ice.gif" />
+                        <img onclick="show_egg('runepillar')" class="artefact artefact_small runepillar" src="assets/img/play/runepillar.svg" />
+                        <img onclick="show_egg('lootbox')"class="artefact artefact_small lootbox" src="assets/img/play/lootbox.svg" />
+                        <img class="land_desktop_img" src="assets/img/play/ice.svg" />
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+
+        </div>
+
+        <div class="arctic_footer_desktop">
+                <img src="assets/img/play/arctic.svg"/>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row" id="contact">
+                <p>&nbsp;</p>
+                <div class="col-lg-12">
+                    <h4 class="title" id="tracks" style="font-size: 18px; line-height: 40px">Have something in mind? </h4>
+                    <p class="study_description" style="color:white">Reach out at <a href="mailto:shuvam.manna@gmail.com"
+                            class="link_text">shuvam.manna@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <br /><br />
+                    <div class="social_box">
+                        <ul class="social_list">
+                            <a target="_blank" href="https://twitter.com/shuvam360">
+                                <li class="social_logo">
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://linkedin.com/in/shuvam-manna">
+                                <li class="social_logo">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://dribbble.com/shuvammanna">
+                                <li class="social_logo">
+                                    <i class="fab fa-dribbble"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://github.com/geekboysupreme">
+                                <li class="social_logo">
+                                    <i class="fab fa-github"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://shuvammanna.medium.com/">
+                                <li class="social_logo">
+                                    <i class="fab fa-medium-m"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://behance.net/shuvammanna">
+                                <li class="social_logo">
+                                    <i class="fab fa-behance"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://instagram.com/the_distorted_aura">
+                                <li class="social_logo">
+                                    <i class="fab fa-instagram"></i>
+                                </li>
+                            </a>
+                            <a target="_blank" href="https://www.producthunt.com/@shuvam_manna">
+                                <li class="social_logo">
+                                    <i class="fab fa-product-hunt"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <br />
+    </div>
+
+    </div>
+
+    
+
+    <!--   Core JS Files   -->
+
+    <script src="assets/js/play.js"></script>
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/material-kit.js?v=2.0.2"></script>
+    <script src="assets/js/generate_content.js"></script>
+
+    <script src="https://platform.oswaldlabs.com/v1/agastya/load/https:shuvam.xyz-38d7d.js" async defer></script>
+
+</body>
+
+</html>
