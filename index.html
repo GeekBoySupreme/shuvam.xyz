@@ -21,9 +21,7 @@
     <script src="https://kit.fontawesome.com/622afd0c30.js" crossorigin="anonymous"></script>
     <!-- Documentation extras -->
     <link type="text/css" href="assets/css/demo.css" rel="stylesheet" />
-    <link href="assets/css/footer.css" rel="stylesheet" />
-    <link href="assets/css/roulette.css" rel="stylesheet" />
-   
+    <link href="assets/css/footer.css" rel="stylesheet" />   
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono:wght@900&display=swap" rel="stylesheet">
 
@@ -34,10 +32,10 @@
         id="sectionsNav">
         <div class="container">
             <div class="navbar-translate" style="height:70px;">
-                <a class="navbar-brand" href="/"><span id="gdg-logo"><b class="header-icon-text emoji-container"><img id="roulette-1" src="./assets/img/logos/img-1.svg" height="24px"/><img id="roulette-2" src="assets/img/logos/img-2.svg" height="24px" style="margin-left:2px;"/><img id="roulette-3" src="assets/img/logos/img-3.svg" height="24px" style="margin-left:2px;"/></b></span></a>
+                <a class="navbar-brand" href="/"><span id="gdg-logo"><b class="header-icon-text"><img id="roulette-1" src="./assets/img/logos/img-1.svg" height="24px"/><img id="roulette-2" src="assets/img/logos/img-2.svg" height="24px" style="margin-left:2px;"/><img id="roulette-3" src="assets/img/logos/img-3.svg" height="24px" style="margin-left:2px;"/></b></span></a>
                 <button style="color:white" class="navbar-toggler" type="button" data-toggle="collapse"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    🍔
+                    <img src="assets/img/logos/img-13.svg" height="24px"/>
                 </button>
             </div>
             <div class="collapse navbar-collapse">
@@ -433,8 +431,7 @@
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
     <script src="assets/js/generate_content.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js'></script>
-    <script src="assets/js/roulette.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js' async defer></script>
     <script type="text/javascript">
         var navigation = document.getElementsByClassName('navbar')[0];
         //add a class to the navbar on scroll
@@ -454,30 +451,54 @@
         var block2step = 1;
         var block3step = 1;
         block1.onmouseover = function() {
-            if(block1step == 8) {
+            if(block1step == 23) {
                 block1step = 1;
             } else {
                 block1step++;
             }
             block1.src = "assets/img/logos/img-"+block1step+".svg";
+            rouletter_check(block1step, block2step, block3step);
         }
         block2.onmouseover = function() {
-            if(block2step == 8) {
+            if(block2step == 23) {
                 block2step = 1;
             } else {
                 block2step++;
-                basic();
             }
             block2.src = "assets/img/logos/img-"+block2step+".svg";
+            rouletter_check(block1step, block2step, block3step);
         }
         block3.onmouseover = function() {
-            if(block3step == 8) {
+            if(block3step == 23) {
                 block3step = 1;
             } else {
                 block3step++;
             }
             block3.src = "assets/img/logos/img-"+block3step+".svg";
+            rouletter_check(block1step, block2step, block3step);
         }
+
+
+
+        const emojistore = ['🥳', '🍕', '🦄', '🌈', '💩', '😎'];
+        var emoji = emojistore[Math.floor(Math.random() * emojistore.length)];
+
+
+        function rouletter_check(value1, value2, value3) {
+            console.log(value1, value2, value3);
+            if (value1 == value2 && value2 == value3 && value1 !=1) {
+            // Initialize jsConfetti
+            const jsConfetti = new JSConfetti();
+            // Trigger the confetti with the specific emoji
+            jsConfetti.addConfetti({
+                emojis: [emoji], // Use the emoji as confetti
+                emojiSize: 70,
+                confettiNumber: 40, // Number of confetti particles
+            });
+        }
+            emoji = emojistore[Math.floor(Math.random() * emojistore.length)];
+        }
+        
     </script>
     
 </body>
