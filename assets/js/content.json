@@ -9,14 +9,14 @@
         {
             "project_name" : "Show Keys",
             "project_description" : "A utility to visualize keypresses on your browser. Just that. It does that one thing.",
-            "project_thumbnail" : "./assets/img/kit/show-keys.png",
-            "project_link" : "https://www.producthunt.com/posts/show-keys"
+            "project_thumbnail" : "./assets/img/kit/showkeys.svg",
+            "project_link" : "https://bit.ly/showkeys"
         },
         {
             "project_name" : "TabTrum",
             "project_description" : "TabTrum is a light and fast Chrome Extension that lets you save multiple tab combinations.",
             "project_thumbnail" : "./assets/img/kit/tabtrum.png",
-            "project_link" : "https://www.producthunt.com/posts/tabtrum"
+            "project_link" : "https://tabtrum.netlify.app"
         },
         {
             "project_name" : "CouponHub",
@@ -56,6 +56,11 @@
         }
     ],
     "talks": [
+        {
+            "talk_name": "The Unbearable Lightness of writing CSS",
+            "talk_venue": "DevFest 2023, Chennai",
+            "talk_link": "https://youtu.be/XzlK5WIbszA?si=_t-lezwiE6Vqtu_O"
+        },
         {
             "talk_name": "(re)Learning riding the bicycle",
             "talk_venue": "DevFest 2022, Kolkata",

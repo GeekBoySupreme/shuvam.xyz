@@ -11373,7 +11373,7 @@ fieldset[disabled] .form-check .form-check-input,
   padding: 0.625rem 0;
   margin-bottom: 20px;
   color: #f0f0f0;
-  transition : all 0.3s ease-out;
+  transition : all 0.1s ease-out;
   border-bottom: 1px solid transparent;
   height:70px;
 }
