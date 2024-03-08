@@ -22,6 +22,7 @@
     <!-- Documentation extras -->
     <link type="text/css" href="assets/css/demo.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/roulette.css" rel="stylesheet" />
    
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono:wght@900&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
         id="sectionsNav">
         <div class="container">
             <div class="navbar-translate" style="height:70px;">
-                <a class="navbar-brand" href="/"><span id="gdg-logo"><b class="header-icon-text">🦄💙😎</b></a>
+                <a class="navbar-brand" href="/"><span id="gdg-logo"><b class="header-icon-text emoji-container"><img id="roulette-1" src="./assets/img/logos/img-1.svg" height="24px"/><img id="roulette-2" src="assets/img/logos/img-2.svg" height="24px" style="margin-left:2px;"/><img id="roulette-3" src="assets/img/logos/img-3.svg" height="24px" style="margin-left:2px;"/></b></span></a>
                 <button style="color:white" class="navbar-toggler" type="button" data-toggle="collapse"
                     aria-expanded="false" aria-label="Toggle navigation">
                     🍔
@@ -429,12 +430,55 @@
 
 
     <!--   Core JS Files   -->
-                      
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
     <script src="assets/js/generate_content.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js'></script>
+    <script src="assets/js/roulette.js"></script>
+    <script type="text/javascript">
+        var navigation = document.getElementsByClassName('navbar')[0];
+        //add a class to the navbar on scroll
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                navigation.classList.add('navbar-scrolling-state');
+            } else {
+                navigation.classList.remove('navbar-scrolling-state');
+            }
+        });
 
-    <script src="https://platform.oswaldlabs.com/v1/agastya/load/https:shuvam.xyz-38d7d.js" async defer></script>
+        var block1 = document.getElementById('roulette-1');
+        var block2 = document.getElementById('roulette-2');
+        var block3 = document.getElementById('roulette-3');
+
+        var block1step = 1;
+        var block2step = 1;
+        var block3step = 1;
+        block1.onmouseover = function() {
+            if(block1step == 8) {
+                block1step = 1;
+            } else {
+                block1step++;
+            }
+            block1.src = "assets/img/logos/img-"+block1step+".svg";
+        }
+        block2.onmouseover = function() {
+            if(block2step == 8) {
+                block2step = 1;
+            } else {
+                block2step++;
+                basic();
+            }
+            block2.src = "assets/img/logos/img-"+block2step+".svg";
+        }
+        block3.onmouseover = function() {
+            if(block3step == 8) {
+                block3step = 1;
+            } else {
+                block3step++;
+            }
+            block3.src = "assets/img/logos/img-"+block3step+".svg";
+        }
+    </script>
     
 </body>
 

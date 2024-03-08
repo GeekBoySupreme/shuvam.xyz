@@ -219,8 +219,17 @@
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
     <script src="assets/js/generate_content.js"></script>
-
-    <script src="https://platform.oswaldlabs.com/v1/agastya/load/https:shuvam.xyz-38d7d.js" async defer></script>
+    <script type="text/javascript">
+        var navigation = document.getElementsByClassName('navbar')[0];
+        //add a class to the navbar on scroll
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                navigation.classList.add('navbar-scrolling-state');
+            } else {
+                navigation.classList.remove('navbar-scrolling-state');
+            }
+        });
+    </script>
 
 </body>
 
