@@ -21,6 +21,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
 
+    <style>
+        .squiggly-strike {
+            position: relative;
+            text-decoration: none;
+            display: inline-block; /* Make sure the element behaves like an inline block */
+          }
+          
+          .squiggly-strike::after {
+            content: "";
+            position: absolute;
+            bottom: 40%;
+            left: 0;
+            right: 0;
+            height: 8px; /* Adjust the thickness of the squiggly line as needed */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4"><path fill="%23ff69b4" d="M0 2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1 1 1 0 0 0-2 0 1 1 0 0 1-2 0 1 1 0 0 0-2 0 1 1 0 0 0-2 0 1 1 0 0 1-2 0z"/></svg>');
+            background-repeat: repeat-x;
+          }
+          
+    </style>
 </head>
 
 <body class="landing-page" name="top" id="top">
@@ -74,7 +93,7 @@
         </div>
     </nav>
     
-    <div class="main" style="margin-top: 100px;">
+    <div class="main" style="margin-top: 100px; z-index : 7;">
             
         <div class="container">   
             <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
@@ -89,34 +108,34 @@
                             href="https://github.com/GeekBoySupreme" target="_blank">software tinkerer</a>.</h4>
                     <p>
                     <h4 class="description" id="tracks" style="line-height: 35px;">I'm currently designing at <a class="link_text"
-                            target="_blank" href="https://deepsource.com">DeepSource</a> and Indie-Hacking, working on Projects such as <a
-                            target="_blank" href="https://tabtrum.live" class="link_text">TabTrum</a>. In the past, I've worked with <a class="link_text"
-                            target="_blank" href="https://devfolio.co">Devfolio</a>, <a class="link_text" target="_blank"
-                            href="https://codedamn.com">Codedamn</a>, <a class="link_text" target="_blank"
-                            href="https://unreal.finance/">Unreal Finance</a>, and cut my teeth as the first Designer + fourth Engineer at <a class="link_text" target="_blank" href="https://openhouse.study">Openhouse</a>.</h4>
+                            target="_blank" href="https://signoz.io">SigNoz</a> and Indie-Hacking, working on Projects such as <a
+                            target="_blank" href="https://sonder.town" class="link_text">Sonder</a> and <a target="_blank" href="https://x.com/shuvam360/status/1718147776511640043?s=20" class="link_text">Loop</a>. In the past, I've worked with <a class="link_text" target="_blank" href="https://deepsource.com">DeepSource</a>, <a class="link_text" target="_blank" href="https://devfolio.co">Devfolio</a>, <a class="link_text" target="_blank" href="https://codedamn.com">Codedamn</a>, and <a class="link_text" target="_blank" href="https://luru.app/">Luru</a>
+                             and cut my teeth as the first Designer + fourth Engineer at <a class="link_text" target="_blank" href="https://openhouse.study">Openhouse</a>.</h4>
                     </p>
 
                     <p>
                         <h4 class="description" id="tracks" style="line-height: 35px;">I transitioned into Product Design from being a Software Engineer in early 2020. I have always
-                        loved to design, and it was always difficult for me to be siloed into an either-or setting. <br/>
-                    Once upon a time, I wanted to be a <a class="link_text" target="_blank" href="https://www.instagram.com/the_distorted_aura/">photographer</a>. Tall ask, but I naturally had a knack for doodling, music, and the spoken arts. I gravitate towards projects that allow me to have an impact, from designing educational content for people with low tech
-                literacy to building a community for the next set of designers.</h4>
+                        loved to design, and I now have embraced both the worlds of designing as well figuring out how to build them out. <br/>
+                    Once upon a time, I wanted to be a <a class="link_text" target="_blank" href="https://www.instagram.com/the_distorted_aura/">photographer</a> ⎯ that dream has now comfortably settled into a hobby, and I always had a knack for doodling, music, and the spoken arts. I gravitate towards projects that allow me to realize ways to make humans interfacing with machines easier.</h4>
                     </p>
                     <br/>
                     <h4 class="description" id="tracks" style="line-height: 35px;">
-                    I have been Indie-Hacking for some time now, building tools and hoping to monetize them someday. Recently, <a target="_blank" href="https://producthunt.com/posts/show-keys" class="link_text">Show keys</a> hit the #2 Product of the day on PH.
-                    Besides tech and design, you would usually find me hooked to a country / indie rock / bengali / classical playlist, or immersed in a book, or hitting the streets with my trusty old Nikon. It's been some time since I picked up the violin, but after a formal twelve-year training, I assure I don't play too bad.
+                    I have been Indie-Hacking for some time now, building tools and working on experiments to explore new ways of working with LLMs. A while back, <a target="_blank" href="https://producthunt.com/posts/show-keys" class="link_text">Show keys</a> hit the #2 Product of the day on PH.
+                    Besides the intersection of arts and technology, you would usually find me hooked to a country / indie rock / bengali / classical playlist, or immersed in a book, or hitting the streets with my trusty <span class="squiggly-strike">old Nikon</span> ⎯ new aide : A Fujifim XT30 II. It's been some time since I picked up the violin, but after a formal twelve-year training, I assure I don't play too bad.
                     </h4>
                     <br/>
                     <h4 class="description" id="tracks" style="line-height: 35px;">
-                    You can find me on <a class="link_text" target="_blank" href="https://twitter.com/shuvam360">Twitter</a> where I talk about design, fun stuff, and anything that catches my attention, 
+                    You can find me on <a class="link_text" target="_blank" href="https://twitter.com/shuvam360">Twitter</a> where I talk about design, research and explorations, and anything that catches my attention, 
                     or on <a class="link_text" target="_blank" href="https://github.com/geekboysupreme">GitHub</a> where I build things in the open, or on <a class="link_text" target="_blank" href="https://instagram.com/the_distorted_aura">Instagram</a>.
                     </h4>
                     <br/>
-                    <h4 class="description" id="tracks" style="line-height: 35px;">Curious to know what my favourite Pixar and Studio Ghibli movies are? Or want grab a cup of (virtual) coffee ☕, share memes and talk about inclusive design? Feel free to reach out <a class="link_text" href="mailto:shuvam.manna@gmail.com">here 🖖</a></h4>
+                    <h4 class="description" id="tracks" style="line-height: 35px;">Curious to know what my favourite Pixar and / or Studio Ghibli movies are? Or want grab a cup of (virtual) coffee ☕, share memes and talk about inclusive design? Feel free to reach out <a class="link_text" href="mailto:shuvam.manna@gmail.com">here 🖖</a></h4>
                     <br/>
                     <br/>
                     <a href="./index.html" class="description link_text"><span class="glyph_small">←</span> Back to Home</a>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
             </div>
         </div>
@@ -124,6 +143,32 @@
 
     <div id="footer">
         <div class="container">
+            <div id="Clouds">
+                <div class="Cloud Foreground"></div>
+                <div class="Cloud Background"></div>
+                <div class="Cloud Foreground"></div>
+                <div class="Cloud Background"></div>
+                <div class="Cloud Foreground"></div>
+                <div class="Cloud Background"></div>
+                <div class="Cloud Foreground"></div>
+                <div class="Cloud Background"></div>
+                <div class="Cloud Background"></div>
+                <div class="Cloud Foreground"></div>
+                <div class="Cloud Background"></div>
+                <div class="Cloud Background"></div>
+              <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
+              </div>
+              
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
+                <defs>
+                  <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
+                  c-0.38,0-0.752,0.039-1.113,0.104C24.874,2.677,21.293,0,17.083,0c-5.379,0-9.739,4.361-9.739,9.738
+                  c0,0.418,0.035,0.826,0.084,1.229c-0.375-0.069-0.761-0.11-1.155-0.11C2.811,10.856,0,13.665,0,17.126
+                  c0,3.467,2.811,6.275,6.272,6.275c0.214,0,27.156,0.109,27.577,0.109c2.519,0,4.56-2.043,4.56-4.562
+                  C38.409,16.43,36.368,14.388,33.85,14.388z"/>
+                </defs>
+              </svg>
             <div class="row" id="contact">
                 <p>&nbsp;</p>
                 <div class="col-lg-12">
