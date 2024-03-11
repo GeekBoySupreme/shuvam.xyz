@@ -8,7 +8,7 @@
         },
         {
             "project_name" : "Show Keys",
-            "project_description" : "A utility to visualize keypresses on your browser. Just that. It does that one thing.",
+            "project_description" : "A utility tool to visualize keypresses on your browser. It does just that one thing.",
             "project_thumbnail" : "./assets/img/kit/showkeys.svg",
             "project_link" : "https://bit.ly/showkeys"
         },
