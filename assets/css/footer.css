@@ -185,7 +185,7 @@
 
 
 .Cloud {
-  animation: all FadeIn 0.3s;
+  animation: all FadeIn 1s;
   position: absolute;
   width: 100%;
   background-repeat: no-repeat;
@@ -202,6 +202,7 @@
   -webkit-animation-name: Float, FadeFloat;
           animation-name: Float, FadeFloat;
   z-index: 1;
+  transition: all 0.3s ease-out;
 }
 .Cloud.Foreground {
   height: 10%;
