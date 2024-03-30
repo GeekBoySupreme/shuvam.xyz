@@ -507,10 +507,17 @@ li i {
 }
 
 .project_card {
+  position: relative;
   margin-bottom: 30px;
   padding: 5px 20px 30px 20px;
   background: rgba(100, 100, 100, 0.05);
   border-radius: 4px;
+  transition: all 0.1s ease-out;
+}
+
+.project_card:hover {
+    margin-top:-10px;
+    margin-bottom:40px;
 }
 
 .project_card .about_title_track {
@@ -520,34 +527,65 @@ li i {
 .project_card .description {
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 24px;
 }
 
 .project_card a {
-  color: white;
-  border-bottom: 2px solid white;
-  padding-bottom: 4px;
+  color: rgb(215, 215, 215);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 2px 2px 6px 2px;
+  border-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   font-family: "Jost", sans-serif;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
+
+  border-bottom: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .project_card a:hover {
-  color: rgb(52, 133, 255);
-  border-bottom: 2px solid rgb(52, 133, 255);
+  position: relative;
+  top:3px;
+  color: rgb(255, 177, 105);
+  background-color: rgba(255, 177, 105, 0.2);
+  border-bottom: 3px solid rgba(255, 177, 105, 0.2);
+  border-top: 2px solid rgba(255, 177, 105, 0.2);
+  border-left: 2px solid rgba(255, 177, 105, 0.2);
+  border-right: 2px solid rgba(255, 177, 105, 0.2);
 }
 
 .study_card a {
-  color: white;
-  border-bottom: 2px solid white;
-  padding-bottom: 4px;
+  color: rgb(215, 215, 215);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 2px 2px 6px 2px;
+  border-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   font-family: "Jost", sans-serif;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
+
+  border-bottom: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .study_card a:hover {
-  color: rgb(52, 133, 255);
-  border-bottom: 2px solid rgb(52, 133, 255);
+  position: relative;
+  top:3px;
+  color: rgb(255, 105, 105);
+  background-color: rgba(255, 105, 105, 0.2);
+  border-bottom: 3px solid rgba(255, 105, 105, 0.2);
+  border-top: 2px solid rgba(255, 105, 105, 0.2);
+  border-left: 2px solid rgba(255, 105, 105, 0.2);
+  border-right: 2px solid rgba(255, 105, 105, 0.2);
 }
 
 .study_description {
@@ -569,10 +607,17 @@ li i {
 }
 
 .study_card {
+  position: relative;
   margin-bottom: 25px;
   background: rgba(100, 100, 100, 0.05);
   border-radius: 4px;
   padding-bottom: 20px;
+  transition: all 0.1s ease-out;
+}
+
+.study_card:hover {
+  margin-top:-10px;
+  margin-bottom:35px;
 }
 
 .study_card .link_text {
