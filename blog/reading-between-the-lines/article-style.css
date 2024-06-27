@@ -756,6 +756,12 @@ blockquote {
 
 .top-content-block .active {
 	color:#ffa2d5;
+	text-decoration: none;
+}
+
+.top-content-block .active:hover {
+	color:#ffa2d5;
+	text-decoration: none;
 }
 
 

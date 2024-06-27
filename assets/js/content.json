@@ -91,7 +91,7 @@
             "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Music.%20Art.%20ML.pdf"
         },
         {
-            "talk_name" : "Building Adaptive UX with ML",
+            "talk_name" : "Building Adaptive interfaces with Machine Learning",
             "talk_venue" : "DevFestBlr 2019 | DroidCon India 2019",
             "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/Building%20UX%20with%20ML%20%23DevFestBlr.pdf"
         },
@@ -111,7 +111,7 @@
             "talk_link" : "https://github.com/GeekBoySupreme/talks/blob/master/F8%20slides.pptx.pdf"
         },
         {
-            "talk_name" : "Conversations as a UX",
+            "talk_name" : "Conversations as an interface pattern",
             "talk_venue" : "Cloud Study Jam 2019",
             "talk_link" : " "
         }
