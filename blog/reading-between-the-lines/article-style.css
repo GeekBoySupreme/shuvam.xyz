@@ -30,7 +30,7 @@ article {
 	padding: 2em 1em;
 	width:95%;
 	max-width: 900px;
-	margin-top:60px;
+	margin-top:-60px;
 }
 
 /* fade out this follow image on all sides */
