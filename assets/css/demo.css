@@ -551,12 +551,12 @@ li i {
 .project_card a:hover {
   position: relative;
   top:3px;
-  color: rgb(255, 177, 105);
-  background-color: rgba(255, 177, 105, 0.2);
-  border-bottom: 3px solid rgba(255, 177, 105, 0.2);
-  border-top: 2px solid rgba(255, 177, 105, 0.2);
-  border-left: 2px solid rgba(255, 177, 105, 0.2);
-  border-right: 2px solid rgba(255, 177, 105, 0.2);
+  color: rgb(255, 105, 105);
+  background-color: rgba(255, 105, 105, 0.2);
+  border-bottom: 3px solid rgba(255, 105, 105, 0.2);
+  border-top: 2px solid rgba(255, 105, 105, 0.2);
+  border-left: 2px solid rgba(255, 105, 105, 0.2);
+  border-right: 2px solid rgba(255, 105, 105, 0.2);
 }
 
 .study_card a {
