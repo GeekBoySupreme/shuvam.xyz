@@ -1,12 +1,1 @@
-<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="13.3373" y="13.3373" width="34.084" height="34.084" rx="11.8553" fill="#8C9DDE"/>
-<rect x="22.2288" y="22.2288" width="16.3011" height="16.3011" rx="8.15053" fill="white"/>
-<path d="M4.71542 6.19729L30.8044 24.1189L22.6371 32.2863L4.71542 6.19729Z" fill="white" fill-opacity="0.62"/>
-<path d="M56.2845 4.71542L38.3629 30.8044L30.1955 22.6371L56.2845 4.71542Z" fill="white" fill-opacity="0.62"/>
-<path d="M4.71542 53.3208L30.8044 35.3991L22.6371 27.2318L4.71542 53.3208Z" fill="white" fill-opacity="0.62"/>
-<path d="M56.2845 54.8026L38.3629 28.7136L30.1955 36.881L56.2845 54.8026Z" fill="white" fill-opacity="0.62"/>
-<rect y="28.1564" width="5.92766" height="5.92766" rx="1.48192" fill="white"/>
-<rect x="54.8308" y="28.1564" width="5.92766" height="5.92766" rx="1.48192" fill="white"/>
-<rect x="26.6744" y="51.8671" width="5.92766" height="5.92766" rx="1.48192" fill="white"/>
-<rect x="26.6744" y="2.96387" width="5.92766" height="5.92766" rx="1.48192" fill="white"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" fill="none" viewBox="0 0 61 60"><rect width="34.084" height="34.084" x="13.337" y="13.337" fill="#8C9DDE" rx="11.855"/><rect width="16.301" height="16.301" x="22.229" y="22.229" fill="#fff" rx="8.151"/><path fill="#fff" fill-opacity=".62" d="M4.71542 6.19729L30.8044 24.1189L22.6371 32.2863L4.71542 6.19729Z"/><path fill="#fff" fill-opacity=".62" d="M56.2845 4.71542L38.3629 30.8044L30.1955 22.6371L56.2845 4.71542Z"/><path fill="#fff" fill-opacity=".62" d="M4.71542 53.3208L30.8044 35.3991L22.6371 27.2318L4.71542 53.3208Z"/><path fill="#fff" fill-opacity=".62" d="M56.2845 54.8026L38.3629 28.7136L30.1955 36.881L56.2845 54.8026Z"/><rect width="5.928" height="5.928" y="28.156" fill="#fff" rx="1.482"/><rect width="5.928" height="5.928" x="54.831" y="28.156" fill="#fff" rx="1.482"/><rect width="5.928" height="5.928" x="26.674" y="51.867" fill="#fff" rx="1.482"/><rect width="5.928" height="5.928" x="26.674" y="2.964" fill="#fff" rx="1.482"/></svg>
