@@ -771,7 +771,7 @@ blockquote {
 	max-width: 900px;
 	padding: 0em 1em;
 
-	margin-top: -60px;
+	margin-top: -180px;
 	display: flex;
 	flex-direction: column;
 }
