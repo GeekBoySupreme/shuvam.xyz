@@ -800,7 +800,7 @@ blockquote {
 .floating-toolbar a {
 	color: #fff;
 	border-radius: 6px;
-	padding: 0.35em 0.75em;
+	padding: 0.2em 0.75em;
 	transition: all 0.1s ease;
 }
 
@@ -810,7 +810,7 @@ blockquote {
 }
 
 .floating-toolbar a i {
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
