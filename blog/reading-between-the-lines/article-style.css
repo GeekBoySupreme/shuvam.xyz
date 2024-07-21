@@ -835,7 +835,7 @@ blockquote {
   /* Styles for screens 481px and narrower */
   @media (max-width: 480px) {
 	body {
-	  font-size: 14px; /* Adjust base font size */
+	  font-size: 16px; /* Adjust base font size */
 	}
 
 	.page-title {
@@ -854,7 +854,7 @@ blockquote {
 
   @media (max-width: 320px) {
 	body {
-	  font-size: 14px;
+	  font-size: 16px;
 	}
 
 	.page-title {
