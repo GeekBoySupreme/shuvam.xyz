@@ -23,6 +23,23 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+    <style>
+        /* .iframe_container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .iframe_container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        } */
+    </style>
+
 </head>
 
 <body class="landing-page" name="top" id="top">
@@ -78,7 +95,7 @@
             
         <input id="page_type" type="hidden" value="blogpage"/>
 
-        <div class="container">   
+        <div class="container iframe_container">   
             <iframe src="./blog/reading-between-the-lines/index.html" style="width:100%; border: none;" id="content_frame" scrolling="no"></iframe>
         </div>
     </div>
@@ -166,16 +183,16 @@
     <script src='https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js' async defer></script>
     <script type="text/javascript">
 
-function resizeIframe() {
-     const iframe = document.getElementById('content_frame');
-     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-   }
+        function resizeIframe() {
+            const iframe = document.getElementById('content_frame');
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
 
-   // Call this function after the iframe has loaded
-   document.getElementById('content_frame').onload = resizeIframe;
+        // Call this function after the iframe has loaded
+        document.getElementById('content_frame').onload = resizeIframe;
 
-   // You might also want to resize on window resize
-   window.addEventListener('resize', resizeIframe);
+        // You might also want to resize on window resize
+        window.addEventListener('resize', resizeIframe);
 
 
 

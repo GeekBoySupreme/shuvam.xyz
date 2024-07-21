@@ -28,7 +28,7 @@ body {
 article {
 	margin: 0 auto;
 	padding: 2em 1em;
-	width:95%;
+	width:100%;
 	max-width: 900px;
 	margin-top:-60px;
 }
@@ -831,3 +831,36 @@ blockquote {
 	}
   }
 
+
+  /* Styles for screens 481px and narrower */
+  @media (max-width: 480px) {
+	body {
+	  font-size: 14px; /* Adjust base font size */
+	}
+
+	.page-title {
+		font-size: 1.5em;
+	}
+	h1,h2,h3 {
+		font-size: 1.25em;
+	}
+
+
+	.container {
+	  width: 100%;
+	  padding: 10px;
+	}
+  }
+
+  @media (max-width: 320px) {
+	body {
+	  font-size: 14px;
+	}
+
+	.page-title {
+		font-size: 1.5em;
+	}
+	h1,h2,h3 {
+		font-size: 1.25em;
+	}
+  }
