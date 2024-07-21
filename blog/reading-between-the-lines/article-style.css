@@ -821,5 +821,13 @@ blockquote {
 		left:0px;
 	}
 	
+	body {
+		font-size : 3rem;
+    	font-family: "Jost", sans-serif;
+    	word-spacing: 1.7px;
+    	letter-spacing: 0.7px;
+    	line-height: 1.85;
+		white-space: pre-wrap;
+	}
   }
 
