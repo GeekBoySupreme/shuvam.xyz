@@ -169,6 +169,7 @@
         function resizeIframe() {
             const iframe = document.getElementById('content_frame');
             iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            console.log(iframe.style.height);
         }
 
         // Call this function after the iframe has loaded
