@@ -178,6 +178,15 @@
         // You might also want to resize on window resize
         //window.addEventListener('resize', resizeIframe);
         //console.log("resized");
+        var prevWidth = window.innerWidth;
+        window.addEventListener('resize', function() {
+        var width = window.innerWidth;
+        if (width !== prevWidth) {
+            prevWidth = width;
+            resizeIframe();
+        console.log(width);
+    }
+});
 
 
 
