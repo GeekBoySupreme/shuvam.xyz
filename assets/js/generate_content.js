@@ -28,6 +28,9 @@ function renderData(data) {
     case "projectpage":
       render_at_projects(data.projects);
       break;
+    case "postpage":
+      render_at_post(data.blogs);
+      break;
   }
 }
 
@@ -93,6 +96,26 @@ function render_at_home(data) {
 function render_at_blog(data) {
   var blog_html = "";
   for (var i = 0; i < data.length; i++) {
+    blog_html +=
+      "<li> <a target='_blank' href='" +
+      data[i].blog_link +
+      "' class='nav-link'> <span><b>" +
+      data[i].blog_title +
+      "</b></span> <p>" +
+      data[i].blog_description +
+      "</p><span class='blog_date_tag blog_" +
+      data[i].blog_tag +
+      "'>" +
+      data[i].blog_date +
+      "</span>  </a> </li>";
+  }
+
+  document.getElementById("blog_list").innerHTML = blog_html;
+}
+
+function render_at_post(data) {
+  var blog_html = "";
+  for (var i = 0; i < 4; i++) {
     blog_html +=
       "<li> <a target='_blank' href='" +
       data[i].blog_link +

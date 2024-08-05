@@ -26,6 +26,7 @@
 </head>
 
 <body class="landing-page" name="top" id="top">
+    <input id="page_type" type="hidden" value="postpage"/>
     <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg " color-on-scroll="40"
         id="sectionsNav">
         <div class="container">
@@ -81,6 +82,19 @@
         <div class="container iframe_container">   
             <iframe src="./blog/reading-between-the-lines/index.html" style="width:100%; border: none;" id="content_frame" scrolling="no"></iframe>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 related-post-section">
+                    <h4 class="title" id="tracks" style="font-size: 18px; line-height: 40px">Read more</h4>
+                    <ul class="talk_list blog_list" id="blog_list">
+                        <span class="description">Loading posts . . . 🌈</span>
+                    </ul>
+                    <br/>
+                    <a href="./index.html" class="description link_text"><span class="glyph_small">←</span> Back to Home</a>
+                </div>
+            </div>
+
     </div>
 
     <div id="footer">
@@ -160,7 +174,7 @@
 
 
     <!--   Core JS Files   -->
-                      
+    <script src="assets/js/generate_content.js"></script>
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
     <script src='https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js' async defer></script>

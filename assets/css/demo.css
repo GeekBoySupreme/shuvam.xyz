@@ -400,10 +400,13 @@ li .nav-link {
 }
 
 .talk_list a {
+  color:#fff;
+  transition: all 0.1s ease-in;
 }
 
 .talk_list a:hover,
 .talk_list a:active {
+  color: rgb(253, 135, 204)!important;
 }
 
 .card_content {
@@ -684,4 +687,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+.related-post-section {
+  width:100%;
+  max-width:900px;
+  border-top : 1px solid rgba(255, 255, 255, 0.1);
+  padding-top:60px;
+  padding-left:0px;
+  padding-right:0px;
+  margin: -130px auto 0 auto ;
+}
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .related-post-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
