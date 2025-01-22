@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Art Explorer</title>
+    
+    <!-- API Keys -->
+    <meta name="harvard-api-key" content="12d2ea90-0dda-11ee-8f50-d1d7c5a2c533">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    
+    <!-- MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" crossorigin=""/>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="search-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search art collections...">
+            <div id="search-results" class="hidden">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </div>
+    <div id="article-container" class="hidden">
+        <button id="close-article" class="close-button" aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="artwork-content">
+            <!-- Artwork details will be populated here -->
+        </div>
+    </div>
+    
+    <!-- Core Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    
+    <!-- Museum APIs -->
+    <script src="static/js/wikipedia.js"></script>
+    <script src="static/js/paris.js"></script>
+    <script src="static/js/nypl.js"></script>
+    <script src="static/js/rijks.js"></script>
+    <script src="static/js/artsmia.js"></script>
+    <script src="static/js/cleveland.js"></script>
+    <script src="static/js/chicago-api.js"></script>
+    <script src="static/js/museum.js"></script>
+    
+    <!-- Map Initialization -->
+    <script src="static/js/map.js"></script>
+</body>
+</html>
