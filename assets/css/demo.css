@@ -511,6 +511,7 @@ li i {
 }
 
 .project_card {
+  cursor: pointer!important;
   position: relative;
   margin-bottom: 30px;
   padding: 5px 20px 30px 20px;
@@ -520,21 +521,25 @@ li i {
 }
 
 .project_card:hover {
+    cursor: pointer!important;
     margin-top:-10px;
     margin-bottom:40px;
 }
 
 .project_card .about_title_track {
+  cursor: pointer!important;
   font-size: 21px;
 }
 
 .project_card .description {
+  cursor: pointer!important;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 24px;
 }
 
 .project_card a {
+  cursor: pointer!important;
   color: rgb(215, 215, 215);
   background-color: rgba(255, 255, 255, 0.1);
   margin-top: 8px;
@@ -553,6 +558,7 @@ li i {
 }
 
 .project_card a:hover {
+  cursor: pointer!important;
   position: relative;
   top:3px;
   color: rgb(255, 105, 105);
@@ -564,6 +570,7 @@ li i {
 }
 
 .study_card a {
+  cursor: pointer!important;
   color: rgb(215, 215, 215);
   background-color: rgba(255, 255, 255, 0.1);
   margin-top: 8px;
@@ -582,6 +589,7 @@ li i {
 }
 
 .study_card a:hover {
+  cursor: pointer!important;
   position: relative;
   top:3px;
   color: rgb(255, 105, 105);
@@ -602,29 +610,34 @@ li i {
 }
 
 .study_card .thumbnail {
+  cursor: pointer!important;
   width: 100%;
   border-radius: 4px 4px 0px 0px;
 }
 
 .study_card .content {
+  cursor: pointer!important;
   padding: 2px 25px;
 }
 
 .study_card {
+  cursor: pointer!important;
   position: relative;
   margin-bottom: 25px;
   background: rgba(100, 100, 100, 0.05);
   border-radius: 4px;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   transition: all 0.1s ease-out;
 }
 
 .study_card:hover {
+  cursor: pointer!important;
   margin-top:-10px;
   margin-bottom:35px;
 }
 
 .study_card .link_text {
+  cursor: pointer!important;
   padding: 2px 6px 4px 7px;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -636,6 +649,7 @@ li i {
 }
 
 .study_card .link_text:hover {
+  cursor: pointer!important;
   padding: 2px 6px 4px 7px;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.1);
