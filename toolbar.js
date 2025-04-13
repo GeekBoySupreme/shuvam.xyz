@@ -203,10 +203,10 @@
             toolbar.appendChild(buttonC);
     
             // Create mood knob
-            const moodKnob = document.createElement('div');
-            moodKnob.id = 'mood-knob';
-            moodKnob.textContent = '😇';
-            toolbar.appendChild(moodKnob);
+            // const moodKnob = document.createElement('div');
+            // moodKnob.id = 'mood-knob';
+            // moodKnob.textContent = '😇';
+            // toolbar.appendChild(moodKnob);
     
             // Create stamp button
             const stampButton = document.createElement('div');
@@ -244,7 +244,7 @@
                 handle,
                 draggableHandle,
                 rubberBand,
-                moodKnob,
+                // moodKnob,
                 stampButton,
                 stampContainer
             };
@@ -291,292 +291,292 @@
             const stampImage = '⭐';
     
             // Audio variables
-            let synth;
-            let pattern;
-            const moods = ['Calm', 'Energetic', 'Dreamy', 'Off'];
-            let currentMoodIndex = 0;
-            let rotation = 0;
+            // let synth;
+            // let pattern;
+            // const moods = ['Calm', 'Energetic', 'Dreamy', 'Off'];
+            // let currentMoodIndex = 0;
+            // let rotation = 0;
     
             // Initialize positions
             updateToolbarPosition();
     
             // Initialize audio
-            function initializeAudio() {
-                synth = new Tone.PolySynth().toDestination();
-                synth.volume.value = -20;
+            // function initializeAudio() {
+            //     synth = new Tone.PolySynth().toDestination();
+            //     synth.volume.value = -20;
     
-                const patterns = {
-                    Calm: {
-                        notes: [
-                            // D major chord structure variations
-                            { note: 'D3', duration: '4n', velocity: 0.4 },
-                            { note: 'A3', duration: '2n', velocity: 0.35 },
-                            { note: 'F#4', duration: '4n', velocity: 0.3 },
-                            { note: 'B4', duration: '2n', velocity: 0.25 },
-                            { note: 'E5', duration: '4n', velocity: 0.2 },
+            //     const patterns = {
+            //         Calm: {
+            //             notes: [
+            //                 // D major chord structure variations
+            //                 { note: 'D3', duration: '4n', velocity: 0.4 },
+            //                 { note: 'A3', duration: '2n', velocity: 0.35 },
+            //                 { note: 'F#4', duration: '4n', velocity: 0.3 },
+            //                 { note: 'B4', duration: '2n', velocity: 0.25 },
+            //                 { note: 'E5', duration: '4n', velocity: 0.2 },
                             
-                            // G major chord structure variations
-                            { note: 'G3', duration: '2n', velocity: 0.4 },
-                            { note: 'B3', duration: '4n', velocity: 0.35 },
-                            { note: 'D4', duration: '2n', velocity: 0.3 },
-                            { note: 'G4', duration: '4n', velocity: 0.25 },
-                            { note: 'C5', duration: '2n', velocity: 0.2 },
+            //                 // G major chord structure variations
+            //                 { note: 'G3', duration: '2n', velocity: 0.4 },
+            //                 { note: 'B3', duration: '4n', velocity: 0.35 },
+            //                 { note: 'D4', duration: '2n', velocity: 0.3 },
+            //                 { note: 'G4', duration: '4n', velocity: 0.25 },
+            //                 { note: 'C5', duration: '2n', velocity: 0.2 },
                             
-                            // A major/minor chord structure variations
-                            { note: 'A3', duration: '4n', velocity: 0.38 },
-                            { note: 'E4', duration: '2n', velocity: 0.32 },
-                            { note: 'A4', duration: '4n', velocity: 0.28 },
-                            { note: 'C5', duration: '2n', velocity: 0.24 },
-                            { note: 'F5', duration: '4n', velocity: 0.18 },
+            //                 // A major/minor chord structure variations
+            //                 { note: 'A3', duration: '4n', velocity: 0.38 },
+            //                 { note: 'E4', duration: '2n', velocity: 0.32 },
+            //                 { note: 'A4', duration: '4n', velocity: 0.28 },
+            //                 { note: 'C5', duration: '2n', velocity: 0.24 },
+            //                 { note: 'F5', duration: '4n', velocity: 0.18 },
                             
-                            // F# minor chord structure variations
-                            { note: 'F#3', duration: '2n', velocity: 0.42 },
-                            { note: 'C#4', duration: '4n', velocity: 0.36 },
-                            { note: 'F#4', duration: '2n', velocity: 0.3 },
-                            { note: 'A4', duration: '4n', velocity: 0.26 },
-                            { note: 'D5', duration: '2n', velocity: 0.22 },
+            //                 // F# minor chord structure variations
+            //                 { note: 'F#3', duration: '2n', velocity: 0.42 },
+            //                 { note: 'C#4', duration: '4n', velocity: 0.36 },
+            //                 { note: 'F#4', duration: '2n', velocity: 0.3 },
+            //                 { note: 'A4', duration: '4n', velocity: 0.26 },
+            //                 { note: 'D5', duration: '2n', velocity: 0.22 },
                             
-                            // B minor chord structure variations
-                            { note: 'B3', duration: '4n', velocity: 0.38 },
-                            { note: 'D4', duration: '2n', velocity: 0.33 },
-                            { note: 'F#4', duration: '4n', velocity: 0.28 },
-                            { note: 'B4', duration: '2n', velocity: 0.24 },
-                            { note: 'E5', duration: '4n', velocity: 0.19 },
+            //                 // B minor chord structure variations
+            //                 { note: 'B3', duration: '4n', velocity: 0.38 },
+            //                 { note: 'D4', duration: '2n', velocity: 0.33 },
+            //                 { note: 'F#4', duration: '4n', velocity: 0.28 },
+            //                 { note: 'B4', duration: '2n', velocity: 0.24 },
+            //                 { note: 'E5', duration: '4n', velocity: 0.19 },
                             
-                            // E major chord structure variations
-                            { note: 'E3', duration: '2n', velocity: 0.37 },
-                            { note: 'B3', duration: '4n', velocity: 0.32 },
-                            { note: 'E4', duration: '2n', velocity: 0.28 },
-                            { note: 'G#4', duration: '4n', velocity: 0.23 },
-                            { note: 'B4', duration: '2n', velocity: 0.18 },
+            //                 // E major chord structure variations
+            //                 { note: 'E3', duration: '2n', velocity: 0.37 },
+            //                 { note: 'B3', duration: '4n', velocity: 0.32 },
+            //                 { note: 'E4', duration: '2n', velocity: 0.28 },
+            //                 { note: 'G#4', duration: '4n', velocity: 0.23 },
+            //                 { note: 'B4', duration: '2n', velocity: 0.18 },
                             
-                            // A major chord structure variations
-                            { note: 'A3', duration: '4n', velocity: 0.4 },
-                            { note: 'C#4', duration: '2n', velocity: 0.35 },
-                            { note: 'E4', duration: '4n', velocity: 0.3 },
-                            { note: 'A4', duration: '2n', velocity: 0.25 },
-                            { note: 'C#5', duration: '4n', velocity: 0.2 },
+            //                 // A major chord structure variations
+            //                 { note: 'A3', duration: '4n', velocity: 0.4 },
+            //                 { note: 'C#4', duration: '2n', velocity: 0.35 },
+            //                 { note: 'E4', duration: '4n', velocity: 0.3 },
+            //                 { note: 'A4', duration: '2n', velocity: 0.25 },
+            //                 { note: 'C#5', duration: '4n', velocity: 0.2 },
                             
-                            // Back to D major chord structure variations
-                            { note: 'D3', duration: '2n', velocity: 0.42 },
-                            { note: 'A3', duration: '4n', velocity: 0.37 },
-                            { note: 'D4', duration: '2n', velocity: 0.32 },
-                            { note: 'F#4', duration: '4n', velocity: 0.27 },
-                            { note: 'A4', duration: '2n', velocity: 0.22 }
-                        ],
-                        timing: [
-                            // Alternating between quarter and half notes for gentle flow
-                            '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n',
-                            '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n',
-                            '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n',
-                            '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n'
-                        ],
-                        probability: {
-                            overall: 0.2,
-                            // Higher probabilities for bass and lower for high notes creates groundedness
-                            noteSpecific: [
-                                0.30, 0.28, 0.25, 0.20, 0.15, // D major probabilities
-                                0.30, 0.28, 0.25, 0.20, 0.15, // G major probabilities
-                                0.30, 0.26, 0.24, 0.20, 0.15, // A major/minor probabilities
-                                0.32, 0.29, 0.25, 0.20, 0.16, // F# minor probabilities
-                                0.31, 0.27, 0.24, 0.20, 0.15, // B minor probabilities
-                                0.30, 0.26, 0.23, 0.19, 0.14, // E major probabilities
-                                0.30, 0.28, 0.25, 0.20, 0.15, // A major probabilities
-                                0.32, 0.29, 0.25, 0.20, 0.16  // D major probabilities
-                            ]
-                        },
-                        swing: 0.08, // Very slight swing for natural feel without disrupting calm
-                        arpeggioPattern: 'upDown', // Gentle up and down pattern for smooth transitions
-                        reverb: {
-                            decayTime: 2.2, // Moderate reverb for spaciousness without overwhelming
-                            wetLevel: 0.35, // Subtle reverb mix
-                            preDelay: 0.02 // Small predelay for clarity
-                        },
-                        sustain: 0.65, // Medium sustain for connectedness without muddiness
-                        attack: 0.25, // Soft attack for gentle note entries
-                        release: 1.5, // Long release for smooth transitions between notes
-                        delay: {
-                            time: '8n', 
-                            feedback: 0.15, // Light feedback for subtle echoes
-                            wet: 0.25 // Low wet level for subtlety
-                        },
-                        drift: { // Minimal pitch drift for organic quality
-                            amount: 0.03,
-                            rate: 0.02
-                        },
-                        velocityVariation: {
-                            amount: 0.08, // Subtle velocity variations for natural feeling
-                            pattern: [1, 0.9, 0.95, 0.85, 0.9, 0.95, 0.85, 0.9] // Gentle undulation
-                        },
-                        chord: {
-                            enabled: true,
-                            types: ['major', 'minor', 'sus2'], // Simple, calm chord types
-                            voicing: 'open', // Open voicings for spaciousness
-                            probability: 0.15 // Occasional chords
-                        },
-                        filter: {
-                            type: 'lowpass',
-                            frequency: 2000, // Moderate cutoff that allows clarity while removing harshness
-                            resonance: 0.8, // Low resonance for smoothness
-                            modulation: {
-                                rate: 0.05, // Very slow modulation
-                                depth: 200 // Gentle frequency shift
-                            }
-                        },
-                        tempo: {
-                            bpm: 72, // Slow, relaxed tempo (heart rate at rest)
-                            variation: 0.02 // Minimal tempo fluctuation for natural feel
-                        },
-                        sequenceMode: 'sequential', // Play through progressions in order
-                        transitionProbability: 0.1, // Low chance of jumping to different chord group
-                        harmonySettings: {
-                            voiceLeading: true, // Smooth voice leading between chord changes
-                            bassEmphasis: 0.3 // Slight emphasis on bass notes for grounding
-                        }
-                    },
-                    Energetic: {
-                        notes: [
-                            { note: 'C4', duration: '16n', velocity: 0.7 },
-                            { note: 'E4', duration: '8n', velocity: 0.8 },
-                            { note: 'G4', duration: '16n', velocity: 0.7 },
-                            { note: 'A4', duration: '8n', velocity: 0.9 },
-                            { note: 'C5', duration: '16n', velocity: 0.8 },
-                            { note: 'D5', duration: '32n', velocity: 0.6 },
-                            { note: 'E5', duration: '16n', velocity: 0.9 },
-                            { note: 'G5', duration: '8n', velocity: 1.0 },
-                            { note: 'F5', duration: '16n', velocity: 0.8 },
-                            { note: 'D5', duration: '8n', velocity: 0.7 },
-                            { note: 'B4', duration: '16n', velocity: 0.6 },
-                            { note: 'G4', duration: '4n', velocity: 0.9 }
-                        ],
-                        timing: [
-                            '16n', '8n', '16n', '8n', '16n', '32n', '16n', '8n', '16n', '8n', '16n', '4n'
-                        ],
-                        probability: {
-                            overall: 0.8,
-                            noteSpecific: [0.9, 0.8, 0.7, 0.9, 0.8, 0.6, 0.9, 1.0, 0.8, 0.7, 0.6, 0.9]
-                        },
-                        swing: 0.3,
-                        arpeggioPattern: 'upDown', // Options: 'up', 'down', 'upDown', 'random'
-                        accent: [1, 0, 0, 1, 0, 0, 1, 0], // Accent pattern for rhythmic emphasis
-                        octaveShift: {
-                            pattern: [0, 0, 0, 1, 0, 0, -1, 0], // Occasional octave jumps
-                            probability: 0.4
-                        },
-                        velocityVariation: {
-                            amount: 0.2, // Random velocity variation amount
-                            pattern: [1, 0.8, 0.9, 1, 0.7, 0.8, 1, 0.9] // Velocity multiplier pattern
-                        }
-                    },
-                    Dreamy: {
-                        notes: [
-                            { note: 'D4', duration: '2n', velocity: 0.5 },
-                            { note: 'F#4', duration: '4n', velocity: 0.4 },
-                            { note: 'A4', duration: '2n', velocity: 0.6 },
-                            { note: 'C5', duration: '1n', velocity: 0.3 },
-                            { note: 'E5', duration: '2n', velocity: 0.4 },
-                            { note: 'B4', duration: '4n', velocity: 0.5 },
-                            { note: 'G4', duration: '2n', velocity: 0.3 },
-                            { note: 'A4', duration: '1n', velocity: 0.4 },
-                            { note: 'F#5', duration: '2n', velocity: 0.2 },
-                            { note: 'D5', duration: '2n', velocity: 0.3 }
-                        ],
-                        timing: [
-                            '2n', '4n', '2n', '1n', '2n', '4n', '2n', '1n', '2n', '2n'
-                        ],
-                        probability: {
-                            overall: 0.4,
-                            noteSpecific: [0.5, 0.4, 0.6, 0.3, 0.4, 0.5, 0.3, 0.4, 0.2, 0.3]
-                        },
-                        swing: 0.1, // Minimal swing for a floating feel
-                        arpeggioPattern: 'random', // Random note selection for dreamlike unpredictability
-                        reverb: {
-                            decayTime: 4.0,
-                            wetLevel: 0.7
-                        },
-                        sustain: 0.8, // Long sustain for overlapping notes
-                        attack: 0.2, // Soft attack for gentle note entries
-                        release: 2.0, // Long release for notes to fade gently
-                        delay: {
-                            time: '8n', 
-                            feedback: 0.4,
-                            wet: 0.5
-                        },
-                        drift: { // Subtle pitch drift for ethereal quality
-                            amount: 0.07,
-                            rate: 0.05
-                        },
-                        velocityVariation: {
-                            amount: 0.1, // Gentle velocity variations
-                            pattern: [0.9, 0.7, 0.8, 0.6, 0.9, 0.7, 0.8, 0.6, 0.9, 0.7]
-                        },
-                        octaveShift: {
-                            pattern: [0, 0, 0, 1, 0, -1, 0, 0, 1, 0], // Occasional octave shifts
-                            probability: 0.3
-                        },
-                        chord: {
-                            enabled: true,
-                            types: ['maj7', 'min9', 'sus4'], // Dreamy chord types
-                            probability: 0.35
-                        },
-                        filter: {
-                            type: 'lowpass',
-                            frequency: 1500,
-                            resonance: 2,
-                            modulation: {
-                                rate: 0.1,
-                                depth: 400
-                            }
-                        }
-                    }
-                };
+            //                 // Back to D major chord structure variations
+            //                 { note: 'D3', duration: '2n', velocity: 0.42 },
+            //                 { note: 'A3', duration: '4n', velocity: 0.37 },
+            //                 { note: 'D4', duration: '2n', velocity: 0.32 },
+            //                 { note: 'F#4', duration: '4n', velocity: 0.27 },
+            //                 { note: 'A4', duration: '2n', velocity: 0.22 }
+            //             ],
+            //             timing: [
+            //                 // Alternating between quarter and half notes for gentle flow
+            //                 '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n',
+            //                 '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n',
+            //                 '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n',
+            //                 '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n', '4n', '2n'
+            //             ],
+            //             probability: {
+            //                 overall: 0.2,
+            //                 // Higher probabilities for bass and lower for high notes creates groundedness
+            //                 noteSpecific: [
+            //                     0.30, 0.28, 0.25, 0.20, 0.15, // D major probabilities
+            //                     0.30, 0.28, 0.25, 0.20, 0.15, // G major probabilities
+            //                     0.30, 0.26, 0.24, 0.20, 0.15, // A major/minor probabilities
+            //                     0.32, 0.29, 0.25, 0.20, 0.16, // F# minor probabilities
+            //                     0.31, 0.27, 0.24, 0.20, 0.15, // B minor probabilities
+            //                     0.30, 0.26, 0.23, 0.19, 0.14, // E major probabilities
+            //                     0.30, 0.28, 0.25, 0.20, 0.15, // A major probabilities
+            //                     0.32, 0.29, 0.25, 0.20, 0.16  // D major probabilities
+            //                 ]
+            //             },
+            //             swing: 0.08, // Very slight swing for natural feel without disrupting calm
+            //             arpeggioPattern: 'upDown', // Gentle up and down pattern for smooth transitions
+            //             reverb: {
+            //                 decayTime: 2.2, // Moderate reverb for spaciousness without overwhelming
+            //                 wetLevel: 0.35, // Subtle reverb mix
+            //                 preDelay: 0.02 // Small predelay for clarity
+            //             },
+            //             sustain: 0.65, // Medium sustain for connectedness without muddiness
+            //             attack: 0.25, // Soft attack for gentle note entries
+            //             release: 1.5, // Long release for smooth transitions between notes
+            //             delay: {
+            //                 time: '8n', 
+            //                 feedback: 0.15, // Light feedback for subtle echoes
+            //                 wet: 0.25 // Low wet level for subtlety
+            //             },
+            //             drift: { // Minimal pitch drift for organic quality
+            //                 amount: 0.03,
+            //                 rate: 0.02
+            //             },
+            //             velocityVariation: {
+            //                 amount: 0.08, // Subtle velocity variations for natural feeling
+            //                 pattern: [1, 0.9, 0.95, 0.85, 0.9, 0.95, 0.85, 0.9] // Gentle undulation
+            //             },
+            //             chord: {
+            //                 enabled: true,
+            //                 types: ['major', 'minor', 'sus2'], // Simple, calm chord types
+            //                 voicing: 'open', // Open voicings for spaciousness
+            //                 probability: 0.15 // Occasional chords
+            //             },
+            //             filter: {
+            //                 type: 'lowpass',
+            //                 frequency: 2000, // Moderate cutoff that allows clarity while removing harshness
+            //                 resonance: 0.8, // Low resonance for smoothness
+            //                 modulation: {
+            //                     rate: 0.05, // Very slow modulation
+            //                     depth: 200 // Gentle frequency shift
+            //                 }
+            //             },
+            //             tempo: {
+            //                 bpm: 72, // Slow, relaxed tempo (heart rate at rest)
+            //                 variation: 0.02 // Minimal tempo fluctuation for natural feel
+            //             },
+            //             sequenceMode: 'sequential', // Play through progressions in order
+            //             transitionProbability: 0.1, // Low chance of jumping to different chord group
+            //             harmonySettings: {
+            //                 voiceLeading: true, // Smooth voice leading between chord changes
+            //                 bassEmphasis: 0.3 // Slight emphasis on bass notes for grounding
+            //             }
+            //         },
+            //         Energetic: {
+            //             notes: [
+            //                 { note: 'C4', duration: '16n', velocity: 0.7 },
+            //                 { note: 'E4', duration: '8n', velocity: 0.8 },
+            //                 { note: 'G4', duration: '16n', velocity: 0.7 },
+            //                 { note: 'A4', duration: '8n', velocity: 0.9 },
+            //                 { note: 'C5', duration: '16n', velocity: 0.8 },
+            //                 { note: 'D5', duration: '32n', velocity: 0.6 },
+            //                 { note: 'E5', duration: '16n', velocity: 0.9 },
+            //                 { note: 'G5', duration: '8n', velocity: 1.0 },
+            //                 { note: 'F5', duration: '16n', velocity: 0.8 },
+            //                 { note: 'D5', duration: '8n', velocity: 0.7 },
+            //                 { note: 'B4', duration: '16n', velocity: 0.6 },
+            //                 { note: 'G4', duration: '4n', velocity: 0.9 }
+            //             ],
+            //             timing: [
+            //                 '16n', '8n', '16n', '8n', '16n', '32n', '16n', '8n', '16n', '8n', '16n', '4n'
+            //             ],
+            //             probability: {
+            //                 overall: 0.8,
+            //                 noteSpecific: [0.9, 0.8, 0.7, 0.9, 0.8, 0.6, 0.9, 1.0, 0.8, 0.7, 0.6, 0.9]
+            //             },
+            //             swing: 0.3,
+            //             arpeggioPattern: 'upDown', // Options: 'up', 'down', 'upDown', 'random'
+            //             accent: [1, 0, 0, 1, 0, 0, 1, 0], // Accent pattern for rhythmic emphasis
+            //             octaveShift: {
+            //                 pattern: [0, 0, 0, 1, 0, 0, -1, 0], // Occasional octave jumps
+            //                 probability: 0.4
+            //             },
+            //             velocityVariation: {
+            //                 amount: 0.2, // Random velocity variation amount
+            //                 pattern: [1, 0.8, 0.9, 1, 0.7, 0.8, 1, 0.9] // Velocity multiplier pattern
+            //             }
+            //         },
+            //         Dreamy: {
+            //             notes: [
+            //                 { note: 'D4', duration: '2n', velocity: 0.5 },
+            //                 { note: 'F#4', duration: '4n', velocity: 0.4 },
+            //                 { note: 'A4', duration: '2n', velocity: 0.6 },
+            //                 { note: 'C5', duration: '1n', velocity: 0.3 },
+            //                 { note: 'E5', duration: '2n', velocity: 0.4 },
+            //                 { note: 'B4', duration: '4n', velocity: 0.5 },
+            //                 { note: 'G4', duration: '2n', velocity: 0.3 },
+            //                 { note: 'A4', duration: '1n', velocity: 0.4 },
+            //                 { note: 'F#5', duration: '2n', velocity: 0.2 },
+            //                 { note: 'D5', duration: '2n', velocity: 0.3 }
+            //             ],
+            //             timing: [
+            //                 '2n', '4n', '2n', '1n', '2n', '4n', '2n', '1n', '2n', '2n'
+            //             ],
+            //             probability: {
+            //                 overall: 0.4,
+            //                 noteSpecific: [0.5, 0.4, 0.6, 0.3, 0.4, 0.5, 0.3, 0.4, 0.2, 0.3]
+            //             },
+            //             swing: 0.1, // Minimal swing for a floating feel
+            //             arpeggioPattern: 'random', // Random note selection for dreamlike unpredictability
+            //             reverb: {
+            //                 decayTime: 4.0,
+            //                 wetLevel: 0.7
+            //             },
+            //             sustain: 0.8, // Long sustain for overlapping notes
+            //             attack: 0.2, // Soft attack for gentle note entries
+            //             release: 2.0, // Long release for notes to fade gently
+            //             delay: {
+            //                 time: '8n', 
+            //                 feedback: 0.4,
+            //                 wet: 0.5
+            //             },
+            //             drift: { // Subtle pitch drift for ethereal quality
+            //                 amount: 0.07,
+            //                 rate: 0.05
+            //             },
+            //             velocityVariation: {
+            //                 amount: 0.1, // Gentle velocity variations
+            //                 pattern: [0.9, 0.7, 0.8, 0.6, 0.9, 0.7, 0.8, 0.6, 0.9, 0.7]
+            //             },
+            //             octaveShift: {
+            //                 pattern: [0, 0, 0, 1, 0, -1, 0, 0, 1, 0], // Occasional octave shifts
+            //                 probability: 0.3
+            //             },
+            //             chord: {
+            //                 enabled: true,
+            //                 types: ['maj7', 'min9', 'sus4'], // Dreamy chord types
+            //                 probability: 0.35
+            //             },
+            //             filter: {
+            //                 type: 'lowpass',
+            //                 frequency: 1500,
+            //                 resonance: 2,
+            //                 modulation: {
+            //                     rate: 0.1,
+            //                     depth: 400
+            //                 }
+            //             }
+            //         }
+            //     };
     
-                function updateMood(mood) {
-                    if (pattern) {
-                        pattern.stop();
-                    }
+            //     function updateMood(mood) {
+            //         if (pattern) {
+            //             pattern.stop();
+            //         }
     
-                    if (mood === 'Off') {
-                        return;
-                    }
+            //         if (mood === 'Off') {
+            //             return;
+            //         }
     
-                    const currentPattern = patterns[mood];
-                    pattern = new Tone.Pattern((time, note) => {
-                        if (Math.random() < currentPattern.probability) {
-                            synth.triggerAttackRelease(note, '8n', time);
-                        }
-                    }, currentPattern.notes);
+            //         const currentPattern = patterns[mood];
+            //         pattern = new Tone.Pattern((time, note) => {
+            //             if (Math.random() < currentPattern.probability) {
+            //                 synth.triggerAttackRelease(note, '8n', time);
+            //             }
+            //         }, currentPattern.notes);
     
-                    pattern.interval = currentPattern.timing;
-                    Tone.Transport.start();
-                    pattern.start();
-                }
+            //         pattern.interval = currentPattern.timing;
+            //         Tone.Transport.start();
+            //         pattern.start();
+            //     }
     
-                moodKnob.addEventListener('click', async () => {
-                    if (currentMoodIndex === 0) {
-                        await Tone.start();
-                    }
+            //     moodKnob.addEventListener('click', async () => {
+            //         if (currentMoodIndex === 0) {
+            //             await Tone.start();
+            //         }
     
-                    rotation += 90;
-                    moodKnob.style.transform = `rotate(${rotation}deg)`;
+            //         rotation += 90;
+            //         moodKnob.style.transform = `rotate(${rotation}deg)`;
     
-                    currentMoodIndex = (currentMoodIndex + 1) % moods.length;
-                    const newMood = moods[currentMoodIndex];
-                    moodKnob.textContent = newMood === 'Off' ? '😴' : 
-                                        newMood === 'Calm' ? '😇' : 
-                                        newMood === 'Energetic' ? '🔥' : '✨';
+            //         currentMoodIndex = (currentMoodIndex + 1) % moods.length;
+            //         const newMood = moods[currentMoodIndex];
+            //         moodKnob.textContent = newMood === 'Off' ? '😴' : 
+            //                             newMood === 'Calm' ? '😇' : 
+            //                             newMood === 'Energetic' ? '🔥' : '✨';
     
-                    const colors = {
-                        Calm: '#4CAF50',
-                        Energetic: '#FF5722',
-                        Dreamy: '#9C27B0',
-                        Off: '#757575'
-                    };
-                    moodKnob.style.background = colors[newMood];
+            //         const colors = {
+            //             Calm: '#4CAF50',
+            //             Energetic: '#FF5722',
+            //             Dreamy: '#9C27B0',
+            //             Off: '#757575'
+            //         };
+            //         moodKnob.style.background = colors[newMood];
     
-                    updateMood(newMood);
-                });
-            }
+            //         updateMood(newMood);
+            //     });
+            // }
     
             // Event Handlers
             function updateViewportDimensions() {
@@ -992,41 +992,162 @@
     
             // Play achievement sound when Konami code is entered
             function playAchievementSound() {
-                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                // First, check if Tone.js is already loaded
+                if (typeof Tone === 'undefined') {
+                    // Load Tone.js first and then play the sound
+                    loadToneJS().then(() => {
+                        playMarioPipeSound();
+                    }).catch(error => {
+                        console.error('Failed to load Tone.js:', error);
+                        playFallbackSound();
+                    });
+                } else {
+                    // Tone.js is already loaded, play the sound directly
+                    playMarioPipeSound();
+                }
+            }
+
+            // Function to play the Mario pipe sound using Tone.js
+            function playMarioPipeSound() {
+                // Ensure Tone.js is started
+                if (Tone.context.state !== 'running') {
+                    Tone.start();
+                }
                 
-                // Create oscillators for a fun achievement sound
-                const osc1 = audioContext.createOscillator();
-                osc1.type = 'sine';
-                osc1.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5
-                osc1.frequency.exponentialRampToValueAtTime(987.77, audioContext.currentTime + 0.2); // B5
+                const now = Tone.now();
                 
-                const osc2 = audioContext.createOscillator();
-                osc2.type = 'triangle';
-                osc2.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1); // E5
-                osc2.frequency.exponentialRampToValueAtTime(1318.51, audioContext.currentTime + 0.3); // E6
+                // Main pipe sound synth - classic 8-bit square wave
+                const pipeSynth = new Tone.Synth({
+                    oscillator: {
+                        type: 'square8'  // More complex 8-bit sound with harmonics
+                    },
+                    envelope: {
+                        attack: 0.005,
+                        decay: 0.1,
+                        sustain: 0.9,
+                        release: 0.1
+                    }
+                }).toDestination();
+                pipeSynth.volume.value = -8;
                 
-                // Create gain nodes for envelope
-                const gain1 = audioContext.createGain();
-                gain1.gain.setValueAtTime(0, audioContext.currentTime);
-                gain1.gain.linearRampToValueAtTime(0.3, audioContext.currentTime + 0.05);
-                gain1.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.4);
+                // Secondary synth for accents and flourishes
+                const accentSynth = new Tone.Synth({
+                    oscillator: {
+                        type: 'triangle'
+                    },
+                    envelope: {
+                        attack: 0.001,
+                        decay: 0.05,
+                        sustain: 0,
+                        release: 0.05
+                    }
+                }).toDestination();
+                accentSynth.volume.value = -15;
                 
-                const gain2 = audioContext.createGain();
-                gain2.gain.setValueAtTime(0, audioContext.currentTime);
-                gain2.gain.linearRampToValueAtTime(0.2, audioContext.currentTime + 0.15);
-                gain2.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+                // Bass synth for the deeper notes
+                const bassSynth = new Tone.Synth({
+                    oscillator: {
+                        type: 'square',
+                        width: 0.6
+                    },
+                    envelope: {
+                        attack: 0.01,
+                        decay: 0.3,
+                        sustain: 0.6,
+                        release: 0.5
+                    }
+                }).toDestination();
+                bassSynth.volume.value = -10;
                 
-                // Connect nodes
-                osc1.connect(gain1);
-                osc2.connect(gain2);
-                gain1.connect(audioContext.destination);
-                gain2.connect(audioContext.destination);
+                // Elaborate descending pattern with precise timing and durations
+                const notes = [
+                    // Initial entry "pop"
+                    { note: 'G5', time: 0, duration: '32n', synth: accentSynth, velocity: 0.9 },
+                    
+                    // Main descending pipe sequence
+                    { note: 'E5', time: 0.05, duration: '16n', synth: pipeSynth, velocity: 0.8 },
+                    { note: 'Eb5', time: 0.12, duration: '16n', synth: pipeSynth, velocity: 0.8 }, // Chromatic
+                    { note: 'D5', time: 0.19, duration: '16n', synth: pipeSynth, velocity: 0.8 },
+                    { note: 'C5', time: 0.26, duration: '16n', synth: pipeSynth, velocity: 0.8 },
+                    { note: 'B4', time: 0.33, duration: '16n', synth: pipeSynth, velocity: 0.8 },
+                    { note: 'Bb4', time: 0.40, duration: '16n', synth: pipeSynth, velocity: 0.78 }, // Chromatic
+                    { note: 'A4', time: 0.47, duration: '16n', synth: pipeSynth, velocity: 0.77 },
+                    { note: 'G4', time: 0.54, duration: '16n', synth: pipeSynth, velocity: 0.76 },
+                    { note: 'F4', time: 0.61, duration: '16n', synth: pipeSynth, velocity: 0.75 },
+                    { note: 'E4', time: 0.68, duration: '16n', synth: pipeSynth, velocity: 0.74 },
+                    { note: 'D4', time: 0.75, duration: '16n', synth: pipeSynth, velocity: 0.73 },
+                    
+                    // Accent notes that happen alongside the main sequence
+                    { note: 'G6', time: 0.15, duration: '64n', synth: accentSynth, velocity: 0.3 },
+                    { note: 'E6', time: 0.35, duration: '64n', synth: accentSynth, velocity: 0.25 },
+                    { note: 'C6', time: 0.55, duration: '64n', synth: accentSynth, velocity: 0.2 },
+                    
+                    // Final landing sequence
+                    { note: 'C4', time: 0.82, duration: '8n', synth: pipeSynth, velocity: 0.72 },
+                    { note: 'G3', time: 0.92, duration: '8n', synth: bassSynth, velocity: 0.8 },
+                    { note: 'C3', time: 1.02, duration: '4n', synth: bassSynth, velocity: 0.9 }
+                ];
                 
-                // Start and stop oscillators
-                osc1.start();
-                osc2.start(audioContext.currentTime + 0.1);
-                osc1.stop(audioContext.currentTime + 0.4);
-                osc2.stop(audioContext.currentTime + 0.5);
+                // Play each note with its specific parameters
+                notes.forEach(noteObj => {
+                    const synth = noteObj.synth || pipeSynth;
+                    synth.volume.value = -10 + (noteObj.velocity * 4); // Adjust volume based on velocity
+                    synth.triggerAttackRelease(
+                        noteObj.note, 
+                        noteObj.duration, 
+                        now + noteObj.time,
+                        noteObj.velocity
+                    );
+                });
+                
+                // Add a subtle filter sweep effect
+                const filter = new Tone.Filter({
+                    frequency: 5000,
+                    type: "lowpass",
+                    rolloff: -24
+                }).toDestination();
+                
+                pipeSynth.connect(filter);
+                accentSynth.connect(filter);
+                bassSynth.connect(filter);
+                
+                filter.frequency.setValueAtTime(5000, now);
+                filter.frequency.exponentialRampToValueAtTime(500, now + 1);
+                
+                // Add a subtle wah effect at the end
+                const wahFilter = new Tone.Filter({
+                    frequency: 200,
+                    type: "bandpass",
+                    Q: 2
+                }).toDestination();
+                
+                bassSynth.connect(wahFilter);
+                wahFilter.frequency.setValueAtTime(200, now + 0.9);
+                wahFilter.frequency.exponentialRampToValueAtTime(800, now + 1.3);
+                wahFilter.frequency.exponentialRampToValueAtTime(200, now + 1.5);
+            }
+
+            // Fallback sound using Web Audio API
+            function playFallbackSound() {
+                try {
+                    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    const osc = audioContext.createOscillator();
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(400, audioContext.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.5);
+                    
+                    const gain = audioContext.createGain();
+                    gain.gain.setValueAtTime(0.3, audioContext.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+                    
+                    osc.connect(gain);
+                    gain.connect(audioContext.destination);
+                    
+                    osc.start();
+                    osc.stop(audioContext.currentTime + 0.6);
+                } catch (fallbackError) {
+                    console.error('Fallback sound also failed:', fallbackError);
+                }
             }
     
             // Set up event listeners
