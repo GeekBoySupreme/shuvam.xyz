@@ -25,7 +25,6 @@
                     margin: 0;
                     padding: 0;
                     overflow-x: hidden;
-                    font-family: Arial, sans-serif;
                 }
     
                 #elastic-toolbar-container {
